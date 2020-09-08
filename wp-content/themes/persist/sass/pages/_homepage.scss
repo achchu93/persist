@@ -1,0 +1,24 @@
+.hero-cover {
+	align-items: flex-end;
+	min-height: calc(100vh - 110px);
+	overflow: hidden;
+
+	.wp-block-columns {
+		margin-bottom: 0;
+	}
+
+	.wp-block-cover__inner-container {
+		margin-bottom: 100px;
+	}
+
+	h2 {
+		&.home-header {
+			font-size: 3em;		
+		}
+
+		@include mobile {
+			font-size: 24px;
+		}
+
+	}
+}

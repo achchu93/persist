@@ -1,0 +1,271 @@
+.main-navigation {
+	display: block;
+
+	ul {
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+
+		ul {
+			box-shadow: 0 0 13px rgba(0, 0, 0, 1);
+			position: absolute;
+			top: 100%;
+			left: -999em;
+			z-index: 99999;
+			background: #000;
+			padding: 50px 50px 100px;
+			width: calc(100vw - 15px);
+			overflow: hidden;
+			display: flex;
+			justify-content: space-evenly;
+			flex-basis: 0;
+			@include mobile {
+				padding: 0;
+
+			}
+
+			ul {
+				position: relative;
+				left: auto;
+				top: auto;
+				width: auto;
+				display: inline-block;
+				margin: 0;
+				padding: 0;
+
+				li {
+					border-left: 0;
+					padding: 0;
+					margin-top: 15px;
+
+					a {
+						font-size: 14px;
+						font-weight: 300;
+					}
+				}
+			}
+
+			li {
+				border-left: 2px solid #ec3f15;
+				padding: 10px;
+				flex: 1 1 0px;
+
+				&.menu-item-has-children > a:after {
+					content: "";
+				}
+
+				&:hover,
+				&.current-menu-item,
+				&.current-menu-ancestor {
+					background: transparent;
+					a {
+						color: #ec3f15;
+					}
+					a:before {
+						background: none;
+					}
+				}
+				&.current-menu-item {
+					ul li a {
+						color: #fff;
+					}
+				}
+				> a:before {
+					background: none;
+				}
+				&:hover {
+
+					a {
+						color: #ec3f15;
+					}
+
+					ul li {
+
+						a {
+							color: #fff;
+						}
+
+						&:hover {
+
+							a {
+								color: #ec3f15;
+							}
+						}
+					}
+				}
+
+				&:hover > ul,
+				&.focus > ul {
+					display: block;
+					left: auto;
+				}
+			}
+
+
+			&:hover > a,
+			.focus > a {
+			}
+
+			a:hover,
+			a.focus {
+			}
+		}
+
+		li:hover > ul,
+		li.focus > ul {
+			left: 0;
+		}
+	}
+
+	li {
+		padding: 10px 20px;
+
+		&.menu-item-has-children > a:after {
+			color: #fff;
+			content: ' ▼';
+			font-size: 8px;
+			vertical-align: 1px;
+			margin-left: 4px;
+
+			@include mobile {
+				content: ' ';
+				background: url(images/mobile_nav_arrow.png) 0 0 no-repeat;
+				width: 30px;
+				height: 20px;
+				position: absolute;
+				right: 0;
+
+			}
+		 }
+
+		 &.menu-item-has-children {
+			 .mobile-back {
+				 display: none;
+			 }
+			@include mobile {
+				&:hover {
+					background: transparent;
+				}
+				.sub-menu {
+					padding: 40px 0 0 20px;
+					// pointer-events: none;
+					.mobile-back {
+						display: block;
+						width: 30px;
+						height: 20px;
+						position: absolute;
+						left: 0;
+						top: 6px;						
+						.mobile-back-arrow{
+							background: url(images/mobile_nav_arrow.png) 0 0 no-repeat;
+							width: 30px;
+							height: 20px;
+
+							transform: rotate(180deg);
+						}
+					}
+					li {
+						border-left: 0;
+						 a {
+							 pointer-events: all;
+						 }
+					}
+				}
+			} 
+		 }
+
+		&:hover {
+			background: rgb(245,116,16);
+			background: linear-gradient(90deg, rgba(245,116,16,1) 0%, rgba(230,22,24,1) 100%);
+		}
+
+		&.current-menu-item > a:before,
+		&.current-menu-ancestor > a:before {
+			content: "";
+			position: absolute;
+			bottom: -10px;
+			left: 0;
+			width: 100%;
+			height: 5px;
+			background: rgb(245,116,16);
+			background: linear-gradient(90deg, rgba(245,116,16,1) 0%, rgba(230,22,24,1) 100%);
+		}
+
+		&:hover > a,
+		&.focus > a {
+		}
+
+		@include mobile {
+			&.focus {
+				ul.sub-menu {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					li a:after {
+						background: transparent !important;
+					}
+					ul.sub-menu {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
+	a {
+		display: block;
+		position: relative;
+    text-decoration: none;
+    color: #fff;
+		font-weight: 700;
+		font-size: 16px;
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current-menu-ancestor > a {
+	}
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+
+	.menu-toggle {
+		display: none;
+	}
+
+	.main-navigation ul {
+		display: flex;
+	}
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+	}
+
+	.nav-links {
+		display: flex;
+	}
+
+	.nav-previous {
+		flex: 1 0 50%;
+	}
+
+	.nav-next {
+		text-align: end;
+		flex: 1 0 50%;
+	}
+}
