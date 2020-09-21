@@ -8971,28 +8971,9 @@ a.text-dark:hover, a.text-dark:focus {
 --------------------------------------------------------------*/
 /* Navigation
 --------------------------------------------- */
-.hero-cover {
-	align-items: flex-end;
-	min-height: calc(100vh - 110px);
-	overflow: hidden;
-}
-
-.hero-cover .wp-block-columns {
-	margin-bottom: 0;
-}
-
-.hero-cover .wp-block-cover__inner-container {
-	margin-bottom: 100px;
-}
-
-.hero-cover h2.home-header {
-	font-size: 3em;
-}
-
-@media (max-width: 767px) {
-	.hero-cover h2 {
-		font-size: 24px;
-	}
+#home_marquee {
+	min-height: 100vw;
+	background: #D71B3F;
 }
 
 /* Normalize
@@ -9417,9 +9398,8 @@ big {
 .site-header {
 	display: flex;
 	justify-content: space-between;
-	background: #4093d0;
-	background: linear-gradient(90deg, #4093d0 0%, #205fa5 100%);
-	position: relative;
+	position: absolute;
+	z-index: 1;
 }
 
 .site-header .site-branding {
