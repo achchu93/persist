@@ -1,0 +1,4 @@
+/* Editor styles */
+.block-editor-block-list__layout.is-root-container .wp-block {
+  max-width: unset;
+}
