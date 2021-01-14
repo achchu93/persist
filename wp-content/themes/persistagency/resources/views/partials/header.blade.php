@@ -1,4 +1,4 @@
-<header class="text-white dummy">
+<header class="text-white relative">
   <div class="container flex flex-col items-start justify-between md:flex-row md:py-2 mx-auto px-5">
     <a href="{{ $home_url }}" title="{{ $site_name }}" class="flex title-font font-medium items-center text-white mt-3 md:mt-0 px-3 md:px-0 mx-auto md:ml-0">
       @if ($header_logo_black)

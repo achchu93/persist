@@ -2,6 +2,19 @@
 .dummy * {
   outline: 1px dashed #ff00007a;
 }
+/* Make footer always go bottom*/
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
 /**
  * WordPress Generated Classes
  * @see http://codex.wordpress.org/CSS#WordPress_Generated_Classes

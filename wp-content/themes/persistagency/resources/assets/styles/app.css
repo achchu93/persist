@@ -5,4 +5,5 @@
 @tailwind utilities;
 
 @import 'partials/utils.css';
+@import 'partials/global.css';
 @import 'partials/wp-classes.css';

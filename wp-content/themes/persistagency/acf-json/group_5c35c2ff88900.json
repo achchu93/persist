@@ -3,47 +3,9 @@
     "title": "Global Page",
     "fields": [
         {
-            "key": "field_5c54c3a9dce9c",
-            "label": "No page title",
-            "name": "no_page_title",
-            "type": "true_false",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "message": "Hide page title",
-            "default_value": 0,
-            "ui": 0,
-            "ui_on_text": "",
-            "ui_off_text": ""
-        },
-        {
-            "key": "field_5d782eb42607b",
-            "label": "Empty page title",
-            "name": "empty_page_title",
-            "type": "true_false",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "message": "Show the image, but no text in title",
-            "default_value": 0,
-            "ui": 0,
-            "ui_on_text": "",
-            "ui_off_text": ""
-        },
-        {
             "key": "field_5c35c30caaf53",
-            "label": "Title Background",
-            "name": "page_title_background",
+            "label": "Page Background",
+            "name": "page_background",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -63,25 +25,6 @@
             "max_height": "",
             "max_size": "",
             "mime_types": ""
-        },
-        {
-            "key": "field_5c99158a90d0b",
-            "label": "Custom Title",
-            "name": "page_title_custom",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
         }
     ],
     "location": [
@@ -99,7 +42,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 1,
+    "active": true,
     "description": "",
-    "modified": 1606356461
+    "modified": 1610589518
 }
