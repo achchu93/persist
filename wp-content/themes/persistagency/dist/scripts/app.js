@@ -55,8 +55,64 @@ module.exports = g;
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _smooth_scroll__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./smooth-scroll */ "./resources/assets/scripts/smooth-scroll.js");
+/* harmony import */ var _navigation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./navigation */ "./resources/assets/scripts/navigation.js");
+/* harmony import */ var _mobile_menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./mobile-menu */ "./resources/assets/scripts/mobile-menu.js");
+
+
 
 Object(_smooth_scroll__WEBPACK_IMPORTED_MODULE_0__["default"])();
+Object(_navigation__WEBPACK_IMPORTED_MODULE_1__["default"])();
+Object(_mobile_menu__WEBPACK_IMPORTED_MODULE_3__["default"])();
+
+/***/ }),
+
+/***/ "./resources/assets/scripts/mobile-menu.js":
+/*!*************************************************!*\
+  !*** ./resources/assets/scripts/mobile-menu.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "jquery");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  jQuery(document).ready(function ($) {
+    $('.mobile-menu__open').click(function () {
+      $('.mobile-menu').removeClass('w-0').addClass('w-full');
+    });
+    $('.mobile-menu__close').click(function () {
+      $('.mobile-menu').removeClass('w-full').addClass('w-0');
+    });
+  });
+});
+
+/***/ }),
+
+/***/ "./resources/assets/scripts/navigation.js":
+/*!************************************************!*\
+  !*** ./resources/assets/scripts/navigation.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "jquery");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  jQuery(document).ready(function ($) {
+    $('.navigation__has-submenu').hover(function () {
+      $(this).find('.navigation__submenu').show().removeClass('-translate-y-3 scale-95 opacity-0').addClass('translate-y-0 scale-100 opacity-100');
+      $(this).find('.navigation__arrow').addClass('rotate-180');
+    }, function () {
+      $(this).find('.navigation__submenu').hide().removeClass('translate-y-0 scale-100 opacity-100').addClass('-translate-y-3 scale-95 opacity-0');
+    });
+  });
+});
 
 /***/ }),
 
@@ -113,6 +169,17 @@ __webpack_require__(/*! /Users/lalo/repos/persist/public/wp-content/themes/persi
 __webpack_require__(/*! /Users/lalo/repos/persist/public/wp-content/themes/persistagency/resources/assets/styles/editor.css */"./resources/assets/styles/editor.css");
 module.exports = __webpack_require__(/*! /Users/lalo/repos/persist/public/wp-content/themes/persistagency/resources/assets/styles/app.css */"./resources/assets/styles/app.css");
 
+
+/***/ }),
+
+/***/ "jquery":
+/*!**********************************!*\
+  !*** external {"this":"jQuery"} ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+(function() { module.exports = this["jQuery"]; }());
 
 /***/ })
 

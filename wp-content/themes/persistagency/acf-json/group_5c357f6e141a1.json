@@ -209,8 +209,8 @@
         },
         {
             "key": "field_5c89b2b649d0e",
-            "label": "Header Logo",
-            "name": "header_logo",
+            "label": "Header Logo Black",
+            "name": "header_logo_black",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -220,20 +220,39 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": "",
             "return_format": "array",
             "preview_size": "thumbnail",
             "library": "all",
-            "min_width": 0,
-            "min_height": 0,
-            "min_size": 0,
-            "max_width": 0,
-            "max_height": 0,
-            "max_size": 0,
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5fff8e237a049",
+            "label": "Header Logo White",
+            "name": "header_logo_white",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
             "mime_types": ""
         },
         {
@@ -290,7 +309,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 1,
+    "active": true,
     "description": "",
-    "modified": 1606356447
+    "modified": 1610583619
 }

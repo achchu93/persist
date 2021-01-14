@@ -6,10 +6,10 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'App\\PostWidget' => $baseDir . '/app/PostWidget.php',
     'App\\Providers\\ThemeServiceProvider' => $baseDir . '/app/Providers/ThemeServiceProvider.php',
     'App\\View\\Components\\Alert' => $baseDir . '/app/View/Components/Alert.php',
     'App\\View\\Components\\Featured' => $baseDir . '/app/View/Components/Featured.php',
+    'App\\View\\Components\\Navigation' => $baseDir . '/app/View/Components/Navigation.php',
     'App\\View\\Components\\SocialIcons' => $baseDir . '/app/View/Components/SocialIcons.php',
     'App\\View\\Components\\SocialIconsFooter' => $baseDir . '/app/View/Components/SocialIconsFooter.php',
     'App\\View\\Components\\SocialShare' => $baseDir . '/app/View/Components/SocialShare.php',
@@ -558,6 +558,10 @@ return array(
     'League\\MimeTypeDetection\\FinfoMimeTypeDetector' => $vendorDir . '/league/mime-type-detection/src/FinfoMimeTypeDetector.php',
     'League\\MimeTypeDetection\\GeneratedExtensionToMimeTypeMap' => $vendorDir . '/league/mime-type-detection/src/GeneratedExtensionToMimeTypeMap.php',
     'League\\MimeTypeDetection\\MimeTypeDetector' => $vendorDir . '/league/mime-type-detection/src/MimeTypeDetector.php',
+    'Log1x\\Navi\\Builder' => $vendorDir . '/log1x/navi/src/Builder.php',
+    'Log1x\\Navi\\Facades\\Navi' => $vendorDir . '/log1x/navi/src/Facades/Navi.php',
+    'Log1x\\Navi\\Navi' => $vendorDir . '/log1x/navi/src/Navi.php',
+    'Log1x\\Navi\\NaviServiceProvider' => $vendorDir . '/log1x/navi/src/NaviServiceProvider.php',
     'Monolog\\DateTimeImmutable' => $vendorDir . '/monolog/monolog/src/Monolog/DateTimeImmutable.php',
     'Monolog\\ErrorHandler' => $vendorDir . '/monolog/monolog/src/Monolog/ErrorHandler.php',
     'Monolog\\Formatter\\ChromePHPFormatter' => $vendorDir . '/monolog/monolog/src/Monolog/Formatter/ChromePHPFormatter.php',

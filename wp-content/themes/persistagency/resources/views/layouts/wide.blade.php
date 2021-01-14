@@ -1,3 +1,4 @@
+<x-mobile-navigation></x-mobile-navigation>
 @include('partials.header')
 
 <main class="main flex-1">

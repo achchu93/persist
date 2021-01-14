@@ -79,6 +79,7 @@ class ComposerStaticInitd19177c91cba0817c886c43f4d417af0
         ),
         'L' => 
         array (
+            'Log1x\\Navi\\' => 11,
             'League\\MimeTypeDetection\\' => 25,
             'League\\Flysystem\\' => 17,
         ),
@@ -248,6 +249,10 @@ class ComposerStaticInitd19177c91cba0817c886c43f4d417af0
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
+        'Log1x\\Navi\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/log1x/navi/src',
+        ),
         'League\\MimeTypeDetection\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/mime-type-detection/src',
@@ -323,10 +328,10 @@ class ComposerStaticInitd19177c91cba0817c886c43f4d417af0
     );
 
     public static $classMap = array (
-        'App\\PostWidget' => __DIR__ . '/../..' . '/app/PostWidget.php',
         'App\\Providers\\ThemeServiceProvider' => __DIR__ . '/../..' . '/app/Providers/ThemeServiceProvider.php',
         'App\\View\\Components\\Alert' => __DIR__ . '/../..' . '/app/View/Components/Alert.php',
         'App\\View\\Components\\Featured' => __DIR__ . '/../..' . '/app/View/Components/Featured.php',
+        'App\\View\\Components\\Navigation' => __DIR__ . '/../..' . '/app/View/Components/Navigation.php',
         'App\\View\\Components\\SocialIcons' => __DIR__ . '/../..' . '/app/View/Components/SocialIcons.php',
         'App\\View\\Components\\SocialIconsFooter' => __DIR__ . '/../..' . '/app/View/Components/SocialIconsFooter.php',
         'App\\View\\Components\\SocialShare' => __DIR__ . '/../..' . '/app/View/Components/SocialShare.php',
@@ -875,6 +880,10 @@ class ComposerStaticInitd19177c91cba0817c886c43f4d417af0
         'League\\MimeTypeDetection\\FinfoMimeTypeDetector' => __DIR__ . '/..' . '/league/mime-type-detection/src/FinfoMimeTypeDetector.php',
         'League\\MimeTypeDetection\\GeneratedExtensionToMimeTypeMap' => __DIR__ . '/..' . '/league/mime-type-detection/src/GeneratedExtensionToMimeTypeMap.php',
         'League\\MimeTypeDetection\\MimeTypeDetector' => __DIR__ . '/..' . '/league/mime-type-detection/src/MimeTypeDetector.php',
+        'Log1x\\Navi\\Builder' => __DIR__ . '/..' . '/log1x/navi/src/Builder.php',
+        'Log1x\\Navi\\Facades\\Navi' => __DIR__ . '/..' . '/log1x/navi/src/Facades/Navi.php',
+        'Log1x\\Navi\\Navi' => __DIR__ . '/..' . '/log1x/navi/src/Navi.php',
+        'Log1x\\Navi\\NaviServiceProvider' => __DIR__ . '/..' . '/log1x/navi/src/NaviServiceProvider.php',
         'Monolog\\DateTimeImmutable' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/DateTimeImmutable.php',
         'Monolog\\ErrorHandler' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/ErrorHandler.php',
         'Monolog\\Formatter\\ChromePHPFormatter' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Formatter/ChromePHPFormatter.php',

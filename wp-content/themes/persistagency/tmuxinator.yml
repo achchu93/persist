@@ -5,7 +5,6 @@ startup_window: editor
 
 windows:
   - watchers:
-      - docker-compose up -d
       - nvm use 14
       - composer install
       - yarn
