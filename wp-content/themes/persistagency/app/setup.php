@@ -132,25 +132,44 @@ add_action('after_setup_theme', function () {
  * @return void
  */
 add_action('widgets_init', function () {
-    $config = [
-        'before_widget' => '<section class="widget mb-5 %1$s %2$s">',
+    $configFooter = [
+        'before_widget' => '<section class="widget %1$s %2$s">',
         'after_widget' => '</section>',
-        'before_title' => '<h3 class="mb-3 text-xl">',
+        'before_title' => '<h3 class="font-bold mb-3 text-lg text-red uppercase">',
         'after_title' => '</h3>'
     ];
 
-    // register_sidebar([
-    //     'name' => __('Primary', 'sage'),
-    //     'id' => 'sidebar-primary'
-    // ] + $config);
-
-    // register_sidebar([
-    //     'name' => __('Header', 'sage'),
-    //     'id' => 'sidebar-header'
-    // ] + $config);
+    register_sidebar([
+        'name' => __('Footer1', 'sage'),
+        'id' => 'sidebar-footer1'
+    ] + $configFooter);
 
     register_sidebar([
-        'name' => __('Footer', 'sage'),
-        'id' => 'sidebar-footer'
-    ] + $config);
+        'name' => __('Footer2', 'sage'),
+        'id' => 'sidebar-footer2'
+    ] + $configFooter);
+
+    register_sidebar([
+        'name' => __('Footer3', 'sage'),
+        'id' => 'sidebar-footer3'
+    ] + $configFooter);
+
+    register_sidebar([
+        'name' => __('Subfooter left', 'sage'),
+        'id' => 'sidebar-subfooter-left',
+        'before_widget' => '<section class="widget text-xs %1$s %2$s">',
+        'after_widget' => '</section>',
+        'before_title' => '<h3 class="font-bold mb-3 text-lg text-red uppercase">',
+        'after_title' => '</h3>'
+    ]);
+
+    register_sidebar([
+        'name' => __('Subfooter right', 'sage'),
+        'id' => 'sidebar-subfooter-right',
+        'before_widget' => '<section class="widget text-xs %1$s %2$s">',
+        'after_widget' => '</section>',
+        'before_title' => '<h3 class="font-bold mb-3 text-lg text-red uppercase">',
+        'after_title' => '</h3>'
+    ]);
+
 });

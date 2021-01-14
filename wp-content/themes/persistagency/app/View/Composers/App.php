@@ -28,7 +28,7 @@ class App extends Composer
       'facebook_option' => $this->facebook_option(),
       'twitter_option' => $this->twitter_option(),
       'instagram_option' => $this->instagram_option(),
-      'youtube_option' => $this->youtube_option(),
+      'linkedin_option' => $this->linkedin_option(),
       'email_option' => $this->email_option(),
       'phone_option' => $this->phone_option(),
       'show_share_buttons_option' => $this->show_share_buttons_option(),
@@ -80,10 +80,10 @@ class App extends Composer
     }
   }
 
-  public function youtube_option()
+  public function linkedin_option()
   {
     if (function_exists('get_field')) {
-      return get_field('youtube', 'option');
+      return get_field('linkedin', 'option');
     }
   }
 

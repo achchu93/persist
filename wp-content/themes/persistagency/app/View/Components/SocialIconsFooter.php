@@ -14,7 +14,7 @@ class SocialIconsFooter extends Component
         return $this->view('components.social-icons-footer', [
             'facebook' => get_field('facebook', 'option'),
             'twitter' => get_field('twitter', 'option'),
-            'youtube' => get_field('youtube', 'option'),
+            'linkedin' => get_field('linkedin', 'option'),
             'instagram' => get_field('instagram', 'option'),
         ]);
     }

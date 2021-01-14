@@ -59,11 +59,11 @@
             "endpoint": 0
         },
         {
-            "key": "field_5c89b38649d10",
-            "label": "Facebook",
-            "name": "facebook",
+            "key": "field_5fb590015eea4",
+            "label": "Instagram",
+            "name": "instagram",
             "type": "text",
-            "instructions": "https:\/\/facebook.com\/example",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -97,11 +97,11 @@
             "maxlength": ""
         },
         {
-            "key": "field_5c89b39b49d12",
-            "label": "Youtube",
-            "name": "youtube",
+            "key": "field_5c89b38649d10",
+            "label": "Facebook",
+            "name": "facebook",
             "type": "text",
-            "instructions": "Example: https:\/\/www.youtube.com\/channel\/abc132xyz",
+            "instructions": "https:\/\/facebook.com\/example",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -116,9 +116,9 @@
             "maxlength": ""
         },
         {
-            "key": "field_5fb590015eea4",
-            "label": "Instagram",
-            "name": "instagram",
+            "key": "field_5c89b39b49d12",
+            "label": "Linkedin",
+            "name": "linkedin",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -311,5 +311,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1610583619
+    "modified": 1610663194
 }
