@@ -135,30 +135,11 @@
             "maxlength": ""
         },
         {
-            "key": "field_5c89b39f49d13",
+            "key": "field_6000e4d53ad39",
             "label": "Email",
             "name": "email",
             "type": "text",
-            "instructions": "hello@example.com",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5c89b3a649d14",
-            "label": "Phone",
-            "name": "phone",
-            "type": "text",
-            "instructions": "Example: 556-109-19-88",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -311,5 +292,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1610663194
+    "modified": 1610671352
 }

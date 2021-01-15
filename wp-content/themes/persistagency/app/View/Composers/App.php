@@ -32,6 +32,7 @@ class App extends Composer
       'email_option' => $this->email_option(),
       'phone_option' => $this->phone_option(),
       'show_share_buttons_option' => $this->show_share_buttons_option(),
+      'header_style' => get_field('header_style') ?? 'black',
     ];
   }
 

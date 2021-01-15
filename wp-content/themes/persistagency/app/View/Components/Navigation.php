@@ -7,6 +7,12 @@ use Log1x\Navi\Navi;
 
 class Navigation extends Component
 {
+    public $style;
+    public function __construct($style)
+    { 
+        $this->style=$style;
+    } 
+
     public function render()
     {
         $navigation = (new Navi())->build('primary_navigation');

@@ -4,7 +4,7 @@
       <a 
         href="{{ $item->url }}"
         target="{{ $item->target }}"
-        class="duration-500 font-bold inline-block leading-none px-4 py-2 rounded-full select-none bg-yellow text-black uppercase" 
+        class="{{ $style=='black'?'bg-yellow text-black ':'bg-black text-white' }} duration-500 font-bold inline-block leading-none px-4 py-2 rounded-full select-none uppercase" 
         data-id="{{ $item->dbId }}"
         >
         <span class="flex-shrink-0">
