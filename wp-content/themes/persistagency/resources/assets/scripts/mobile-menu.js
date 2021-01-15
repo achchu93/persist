@@ -1,16 +1,16 @@
 import 'jquery';
-export default function() {
-  jQuery(document).ready(function($) {
-    $('.mobile-menu__open').click(function() {
-      $('.mobile-menu')
-        .removeClass('w-0')
-        .addClass('w-full');
+export default function () {
+  jQuery(document).ready(function ($) {
+
+    // toggle
+    $('.mobile-menu__toggle').click(function () {
+      $('.mobile-menu').toggleClass('translate-x-full');
     });
 
-    $('.mobile-menu__close').click(function() {
-      $('.mobile-menu')
-        .removeClass('w-full')
-        .addClass('w-0');
+    // show and hide sub-menu
+    $('.menu-item-has-children').click(function () {
+      $(this).toggleClass('open');
     });
+
   });
 }

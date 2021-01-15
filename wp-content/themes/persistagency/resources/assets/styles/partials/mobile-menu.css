@@ -1,0 +1,9 @@
+.menu-child-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 500ms ease-in-out;
+}
+
+.menu-item-has-children.open .menu-child-menu {
+  max-height: 999px;
+}

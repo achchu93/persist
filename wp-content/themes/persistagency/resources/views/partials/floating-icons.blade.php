@@ -1,11 +1,11 @@
 @if (!empty($email) && $show_email)
-  <div class="floating-icons__email absolute z-10">
+  <div class="floating-icons__email absolute z-10 hidden md:block">
     <a class="{{ $email_style=='black'?'text-black':'text-yellow' }} " href="{!! antispambot('mailto:'.$email) !!}" target="_blank">{!! antispambot($email) !!}</a>
   </div>
 @endif
 
 @if ($show_floating_social_icons)
-  <div class="floating-icons__social absolute  z-10 flex flex-col items-center mr-8 right-0 space-y-5">
+  <div class="floating-icons__social absolute  z-10 flex flex-col items-center mr-8 right-0 space-y-5 hidden md:block">
     @if (!empty($instagram))
       <a href="{!!  $instagram !!}" rel="noopener" target="_blank">
 

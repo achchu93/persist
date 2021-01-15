@@ -108,4 +108,5 @@ class App extends Composer
       return get_field('show_share_buttons', 'option');
     }
   }
+
 }
