@@ -8,8 +8,10 @@ module.exports = {
   },
   theme: {
     fontFamily: {
-      title: 'Raleway, serif',
-      text: 'Roboto, sans-serif',
+      title: 'Klavika, serif',
+      text: 'Klavika, sans-serif',
+      brushup: 'BrushUp, sans-serif',
+      brushuptoo: 'BrushUpToo, sans-serif',
     },
     typography: {
       default: {

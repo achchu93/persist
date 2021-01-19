@@ -7,7 +7,7 @@
 @if ($show_floating_social_icons)
   <div class="floating-icons__social absolute  z-10 flex flex-col items-center mr-8 right-0 space-y-5 hidden md:block">
     @if (!empty($instagram))
-      <a href="{!!  $instagram !!}" rel="noopener" target="_blank">
+      <a class="block" href="{!!  $instagram !!}" rel="noopener" target="_blank">
 
         <svg class="" id="Grupo_51" data-name="Grupo 51" xmlns="http://www.w3.org/2000/svg" width="29.878" height="29.877" viewBox="0 0 29.878 29.877">
           <path id="Trazado_907" data-name="Trazado 907" d="M192.688,260.847h0a14.939,14.939,0,0,1-14.939-14.939h0a14.939,14.939,0,0,1,14.939-14.939h0a14.939,14.939,0,0,1,14.939,14.939h0A14.939,14.939,0,0,1,192.688,260.847Z" transform="translate(-177.749 -230.97)" fill="#0d1115" />
@@ -23,7 +23,7 @@
     @endif
 
     @if (!empty($twitter))
-      <a href="https://twitter.com/{!!  $twitter !!}" rel="noopener" target="_blank">
+      <a class="block" href="https://twitter.com/{!!  $twitter !!}" rel="noopener" target="_blank">
 
         <svg class="" id="Grupo_45" data-name="Grupo 45" xmlns="http://www.w3.org/2000/svg" width="29.878" height="29.877" viewBox="0 0 29.878 29.877">
           <path id="Trazado_901" data-name="Trazado 901" d="M250.914,260.847h0a14.939,14.939,0,0,1-14.939-14.939h0a14.939,14.939,0,0,1,14.939-14.939h0a14.939,14.939,0,0,1,14.939,14.939h0A14.939,14.939,0,0,1,250.914,260.847Z" transform="translate(-235.975 -230.97)" fill="#0d1115" />
@@ -34,7 +34,7 @@
     @endif
 
     @if (!empty($facebook))
-      <a href="{!!  $facebook !!}" rel="noopener" target="_blank">
+      <a class="block" href="{!!  $facebook !!}" rel="noopener" target="_blank">
         <svg class="" id="Grupo_49" data-name="Grupo 49" xmlns="http://www.w3.org/2000/svg" width="29.878" height="29.878" viewBox="0 0 29.878 29.878">
           <rect id="Rectángulo_10" data-name="Rectángulo 10" width="29.878" height="29.878" rx="14.939" fill="#0d1115" />
           <path id="Trazado_906" data-name="Trazado 906" d="M309.813,256.557h3.636V247.45h2.538l.27-3.049h-2.808v-1.736c0-.719.144-1,.84-1h1.968V238.5h-2.518c-2.706,0-3.926,1.192-3.926,3.473V244.4h-1.892v3.087h1.892Z" transform="translate(-297.15 -232.588)" fill="#f0f0f2" />
@@ -43,7 +43,7 @@
     @endif
 
     @if (!empty($linkedin))
-      <a href="{!!  $linkedin !!}" rel="noopener" target="_blank">
+      <a class="block" href="{!!  $linkedin !!}" rel="noopener" target="_blank">
 
         <svg class="" id="Grupo_48" data-name="Grupo 48" xmlns="http://www.w3.org/2000/svg" width="29.878" height="29.877" viewBox="0 0 29.878 29.877">
           <path id="Trazado_903" data-name="Trazado 903" d="M367.365,260.847h0a14.939,14.939,0,0,1-14.939-14.939h0a14.939,14.939,0,0,1,14.939-14.939h0A14.939,14.939,0,0,1,382.3,245.909h0A14.939,14.939,0,0,1,367.365,260.847Z" transform="translate(-352.426 -230.97)" fill="#0d1115" />

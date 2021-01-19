@@ -1,4 +1,4 @@
-<ul class="font-semibold font-title hidden items-center justify-center md:flex md:ml-auto py-6 text-base">
+<ul class="font-medium font-title hidden items-center justify-center md:flex md:ml-auto py-6 text-base">
   @foreach ($navigation as $item) 
     <li class="navigation relative inline-block sm:mx-2 md:mx-4 lg:mx-8 xl:mx-16 {{ $item->classes ?? '' }} {{ $item->active ? 'active' : '' }} {{ $item->children? 'navigation__has-submenu':'' }}"> 
       <a 
