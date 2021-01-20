@@ -42,7 +42,8 @@ collect([
     'adminbar-buttons',
     'clean-dashboard',
     'allow-svg-uploads',
-    // 'Blocks/block-example',
+    'Blocks/block-work-slider',
+    'Blocks/block-values',
 ])
     ->each(function ($file) {
         $file = "app/{$file}.php";

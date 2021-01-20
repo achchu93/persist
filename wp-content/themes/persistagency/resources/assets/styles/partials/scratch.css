@@ -1,0 +1,24 @@
+.scratch {
+  position: relative;
+}
+.scratch__up::before,
+.scratch__down::after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 101px;
+  background-image: url('../images/white-scratch.png');
+  background-size: cover;
+  z-index: 10;
+  filter: brightness(2); /*TODO: image must be white from source */
+}
+
+.scratch__up::before {
+  top: -101px;
+}
+
+.scratch__down::after {
+  bottom: -101px;
+  transform: rotate(180deg);
+}

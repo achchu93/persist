@@ -1,6 +1,10 @@
 import smoothScroll from './smooth-scroll';
 import navigation from './navigation';
 import mobileMenu from './mobile-menu';
+import workSlider from './work-slider';
+import blockValues from './block-values';
 smoothScroll();
 navigation();
 mobileMenu();
+workSlider();
+blockValues();

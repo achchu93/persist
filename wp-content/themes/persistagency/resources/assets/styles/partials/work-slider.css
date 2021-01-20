@@ -1,0 +1,14 @@
+/* dots in slider */
+.work-slider__slider .slick-dots li {
+  margin: 0 10px;
+}
+.work-slider__slider .slick-dots li button:before {
+  content: '';
+  background-color: black;
+  border-radius: 100%;
+  opacity: 1;
+}
+
+.work-slider__slider .slick-dots li.slick-active button:before {
+  background-color: red;
+}

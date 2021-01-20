@@ -27,8 +27,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#EC1E45',
-        secondary: '#FFCA17',
+        primary: '#FFCA17',
+        secondary: '#EC1E45',
         red: '#EC1E45',
         yellow: '#FFCA17',
         facebook: '#3977f2',
@@ -37,6 +37,9 @@ module.exports = {
       },
       rotate: {
         270: '270deg',
+      },
+      fontSize: {
+        '7xl': '6.25rem',
       },
     },
   },

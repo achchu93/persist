@@ -33,6 +33,7 @@ class App extends Composer
       'phone_option' => $this->phone_option(),
       'show_share_buttons_option' => $this->show_share_buttons_option(),
       'header_style' => get_field('header_style') ?? 'black',
+      'say_hello_url' => $this->say_hello_url(),
     ];
   }
 
@@ -109,4 +110,10 @@ class App extends Composer
     }
   }
 
+  public function say_hello_url()
+  {
+    if (function_exists('get_field')) {
+      return get_field('say_hello_url', 'option');
+    }
+  }
 }

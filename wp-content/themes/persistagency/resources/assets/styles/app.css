@@ -5,7 +5,10 @@
 @import 'partials/fonts.css';
 @import 'partials/utils.css';
 @import 'partials/global.css';
+@import 'partials/components.css';
 @import 'partials/wp-classes.css';
 @import 'partials/page-footer.css';
 @import 'partials/floating-icons.css';
 @import 'partials/mobile-menu.css';
+@import 'partials/scratch.css';
+@import 'partials/work-slider.css';

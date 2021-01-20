@@ -20,6 +20,7 @@ class MobileNavigation extends Component
     return $this->view('components.mobile-navigation', [
       'navigation' => $navigation->toArray(),
       'mobile_navigation_background' => $mobile_navigation_background,
+      'say_hello_url' => get_field('say_hello_url','option'),
     ]);
   }
 }

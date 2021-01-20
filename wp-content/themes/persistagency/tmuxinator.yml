@@ -1,7 +1,7 @@
 # run: tmuxinator start -p tmuxinator.yml
 name: persist-theme
 
-startup_window: editor 
+pre_window: docker-compose up -d
 
 windows:
   - watchers:
@@ -10,3 +10,4 @@ windows:
       - yarn
       - yarn start
   - editor: nvim
+

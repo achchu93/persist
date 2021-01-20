@@ -1,0 +1,21 @@
+.btn {
+  @apply font-bold inline-block leading-none px-4 py-2 rounded-full select-none uppercase;
+}
+
+@screen lg {
+  .btn {
+    @apply px-8 py-3 text-lg;
+  }
+}
+
+.btn-primary {
+  @apply bg-yellow text-black;
+}
+
+.btn-secondary {
+  @apply bg-red text-black;
+}
+
+.btn-black {
+  @apply bg-black text-white;
+}
