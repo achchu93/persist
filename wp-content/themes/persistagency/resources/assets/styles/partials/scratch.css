@@ -1,8 +1,9 @@
-.scratch {
+/* white */
+.scratch-white {
   position: relative;
 }
-.scratch__up::before,
-.scratch__down::after {
+.scratch-white__up::before,
+.scratch-white__down::after {
   display: block;
   content: '';
   position: absolute;
@@ -14,11 +15,57 @@
   filter: brightness(2); /*TODO: image must be white from source */
 }
 
-.scratch__up::before {
+.scratch-white__up::before {
   top: -101px;
 }
 
-.scratch__down::after {
+.scratch-white__down::after {
   bottom: -101px;
   transform: rotate(180deg);
+}
+
+/*blue*/
+.scratch-blue {
+  position: relative;
+}
+.scratch-blue__down::after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 73px;
+  background-image: url('../images/blue-scratch.png');
+  background-size: cover;
+  z-index: 10;
+}
+
+.scratch-blue__down::after {
+  bottom: -73px;
+}
+
+/* black */
+
+.scratch-black {
+  position: relative;
+}
+.scratch-black__up::before,
+.scratch-black__down::after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 100%;
+  background-size: cover;
+  z-index: 10;
+}
+
+.scratch-black__up::before {
+  background-image: url('../images/scratch-black-up.png');
+  height: 45px;
+  top: -45px;
+}
+
+.scratch-black__down::after {
+  background-image: url('../images/scratch-black-down.png');
+  bottom: -82px;
+  height: 82px;
 }

@@ -5,4 +5,5 @@
   @yield('content')
 </main>
 
+@include('partials.block-footer-cta')
 @include('partials.footer')

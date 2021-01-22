@@ -39,7 +39,11 @@ module.exports = {
         270: '270deg',
       },
       fontSize: {
-        '7xl': '6.25rem',
+        '7xl': '5.06rem',
+        '8xl': '6.25rem',
+      },
+      rotate: {
+        '-8': '-8deg',
       },
     },
   },

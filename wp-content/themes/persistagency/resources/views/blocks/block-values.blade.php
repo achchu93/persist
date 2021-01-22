@@ -1,4 +1,4 @@
-<div class="{{ $class }} relative">
+<div class="{{ $class }} relative scratch-blue scratch-blue__down">
 
   @if ($background)
     {!! wp_get_attachment_image($background['id'], 'full', false, ['class' => 'absolute w-full h-full object-cover']) !!}
@@ -13,25 +13,25 @@
     @endif
 
     @if ($items)
-      <div class=" items max-w-5xl mx-auto">
+      <div class="items lg:max-w-4xl mx-auto xl:max-w-5xl">
 
         @foreach ($items as $item)
           <div class="block-values__item {{ $item['class'] }}" id="{{ $item['id'] }}">
 
-            <div class="flex items-center mt-24 space-x-8">
+            <div class="flex items-center md:space-x-8 mt-24 space-x-4 text-primary">
 
               @if (!empty($item['icon']))
-                {!! wp_get_attachment_image($item['icon']['id'], 'full', false, ['class' => 'h-24 w-auto']) !!}
+                {!! get_svg($item['icon'], 'fill-current h-16 md:h-24 w-auto') !!}
               @endif
 
               @if (!empty($item['title']))
-                <div class="text-7xl text-primary">{!! $item['title'] !!}</div>
+                <div class="md:text-8xl text-5xl">{!! $item['title'] !!}</div>
               @endif
 
             </div>
 
             @if (!empty($item['text']))
-              <div class="text-5xl text-white">{!! $item['text'] !!}</div>
+              <div class="md:text-5xl mt-5 text-3xl text-white">{!! $item['text'] !!}</div>
             @endif
 
           </div>
@@ -42,10 +42,10 @@
       <div class="flex justify-center mt-24 space-x-8">
 
         @foreach ($items as $item)
-          <div class="block-values__control text-white cursor-pointer" data-target="{{ $item['id'] }}">
+          <div class="block-values__control text-white hover:text-primary cursor-pointer" data-target="{{ $item['id'] }}">
 
             @if (!empty($item['icon']))
-              {!! wp_get_attachment_image($item['icon']['id'], 'full', false, ['class' => '']) !!}
+                {!! get_svg($item['icon'], 'fill-current') !!}
             @endif
 
           </div>
@@ -56,7 +56,7 @@
 
     @if (!empty($link))
       <div class="">
-        <a class="block flex font-bold text-white items-center justify-end space-x-1 text-lg uppercase" href="{{ $link['url'] }}" target="{{ $link['target'] }}">
+        <a class="block mt-10 flex font-bold text-white items-center hover:text-primary justify-end space-x-1 text-lg uppercase" href="{{ $link['url'] }}" target="{{ $link['target'] }}">
           <span>{{ $link['title'] }}</span>
           <img src="@asset('images/arrow-right.png')" alt="arrow" />
         </a>

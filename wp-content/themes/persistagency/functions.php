@@ -44,6 +44,8 @@ collect([
     'allow-svg-uploads',
     'Blocks/block-work-slider',
     'Blocks/block-values',
+    'Blocks/block-what-we-do',
+    'Blocks/block-hero',
 ])
     ->each(function ($file) {
         $file = "app/{$file}.php";

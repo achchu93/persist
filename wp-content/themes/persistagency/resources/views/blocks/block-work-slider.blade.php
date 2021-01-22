@@ -1,4 +1,4 @@
-<div class="work-slider scratch scratch__up scratch__down {{ $class }}">
+<div class="work-slider scratch-white scratch-white__up scratch-white__down {{ $class }}">
   <div class="container mx-auto px-4 py-8">
 
     @if (!empty($title))

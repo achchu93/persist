@@ -22,6 +22,7 @@ class ComposerStaticInitd19177c91cba0817c886c43f4d417af0
         'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
         '7018e3dbeb54682c59da60bb2ff4f971' => __DIR__ . '/..' . '/roots/support/helpers.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
+        '2fb983e63247f84d8365e00e3015e40b' => __DIR__ . '/..' . '/log1x/sage-svg/src/helpers.php',
         '8f15f9ff549eb573a8fa9fc1521408d9' => __DIR__ . '/..' . '/roots/acorn/src/helpers.php',
     );
 
@@ -79,6 +80,7 @@ class ComposerStaticInitd19177c91cba0817c886c43f4d417af0
         ),
         'L' => 
         array (
+            'Log1x\\SageSvg\\' => 14,
             'Log1x\\Navi\\' => 11,
             'League\\MimeTypeDetection\\' => 25,
             'League\\Flysystem\\' => 17,
@@ -249,6 +251,10 @@ class ComposerStaticInitd19177c91cba0817c886c43f4d417af0
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
+        'Log1x\\SageSvg\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/log1x/sage-svg/src',
+        ),
         'Log1x\\Navi\\' => 
         array (
             0 => __DIR__ . '/..' . '/log1x/navi/src',
@@ -333,7 +339,6 @@ class ComposerStaticInitd19177c91cba0817c886c43f4d417af0
         'App\\View\\Components\\Featured' => __DIR__ . '/../..' . '/app/View/Components/Featured.php',
         'App\\View\\Components\\MobileNavigation' => __DIR__ . '/../..' . '/app/View/Components/MobileNavigation.php',
         'App\\View\\Components\\Navigation' => __DIR__ . '/../..' . '/app/View/Components/Navigation.php',
-        'App\\View\\Components\\SecondaryNavigation' => __DIR__ . '/../..' . '/app/View/Components/SecondaryNavigation.php',
         'App\\View\\Components\\SocialIcons' => __DIR__ . '/../..' . '/app/View/Components/SocialIcons.php',
         'App\\View\\Components\\SocialIconsFooter' => __DIR__ . '/../..' . '/app/View/Components/SocialIconsFooter.php',
         'App\\View\\Components\\SocialShare' => __DIR__ . '/../..' . '/app/View/Components/SocialShare.php',
@@ -887,6 +892,8 @@ class ComposerStaticInitd19177c91cba0817c886c43f4d417af0
         'Log1x\\Navi\\Facades\\Navi' => __DIR__ . '/..' . '/log1x/navi/src/Facades/Navi.php',
         'Log1x\\Navi\\Navi' => __DIR__ . '/..' . '/log1x/navi/src/Navi.php',
         'Log1x\\Navi\\NaviServiceProvider' => __DIR__ . '/..' . '/log1x/navi/src/NaviServiceProvider.php',
+        'Log1x\\SageSvg\\SageSvg' => __DIR__ . '/..' . '/log1x/sage-svg/src/SageSvg.php',
+        'Log1x\\SageSvg\\SageSvgServiceProvider' => __DIR__ . '/..' . '/log1x/sage-svg/src/SageSvgServiceProvider.php',
         'Monolog\\DateTimeImmutable' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/DateTimeImmutable.php',
         'Monolog\\ErrorHandler' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/ErrorHandler.php',
         'Monolog\\Formatter\\ChromePHPFormatter' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Formatter/ChromePHPFormatter.php',

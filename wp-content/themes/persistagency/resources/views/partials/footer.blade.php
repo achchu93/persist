@@ -1,7 +1,7 @@
 <footer class="page-footer relative bg-bottom bg-repeat-x" style="background-image:url(@asset('images/footer-bg.png'))">
   <div class="container mx-auto">
 
-    <div class="flex flex-col md:flex-row md:pt-16 md:space-x-10 md:space-y-0 px-4 py-8 space-y-10">
+    <div class="flex flex-col md:flex-row md:space-x-10 md:space-y-0 pt-24 px-4 py-8 space-y-10">
 
       <div class="md:w-1/3 space-y-10"> 
         <a href="{{ home_url('/') }}"
