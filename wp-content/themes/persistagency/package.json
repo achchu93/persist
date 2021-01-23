@@ -51,5 +51,7 @@
     "tailwindcss": "^1.9.6",
     "vue-template-compiler": "^2.6.12"
   },
-  "dependencies": {}
+  "dependencies": {
+    "alpinejs": "^2.8.0"
+  }
 }

@@ -16,7 +16,6 @@ add_action('acf/init', function () {
             'title' => get_sub_field('title'),
             'text' => get_sub_field('text'),
             'icon' => get_sub_field('icon'),
-            'class' => $first ? 'block' : 'hidden',
             'id' => uniqid(),
           ];
           $first = false;

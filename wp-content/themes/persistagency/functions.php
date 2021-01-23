@@ -46,6 +46,9 @@ collect([
     'Blocks/block-values',
     'Blocks/block-what-we-do',
     'Blocks/block-hero',
+    'Blocks/block-big-image',
+    'Blocks/block-statement-red',
+    'Blocks/block-case-studies-list',
 ])
     ->each(function ($file) {
         $file = "app/{$file}.php";

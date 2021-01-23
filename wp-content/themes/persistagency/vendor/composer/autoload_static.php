@@ -343,6 +343,7 @@ class ComposerStaticInitd19177c91cba0817c886c43f4d417af0
         'App\\View\\Components\\SocialIconsFooter' => __DIR__ . '/../..' . '/app/View/Components/SocialIconsFooter.php',
         'App\\View\\Components\\SocialShare' => __DIR__ . '/../..' . '/app/View/Components/SocialShare.php',
         'App\\View\\Composers\\App' => __DIR__ . '/../..' . '/app/View/Composers/App.php',
+        'App\\View\\Composers\\BlockFooterCta' => __DIR__ . '/../..' . '/app/View/Composers/BlockFooterCta.php',
         'App\\View\\Composers\\Page' => __DIR__ . '/../..' . '/app/View/Composers/Page.php',
         'App\\View\\Composers\\Post' => __DIR__ . '/../..' . '/app/View/Composers/Post.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',

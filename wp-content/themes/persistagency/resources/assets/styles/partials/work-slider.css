@@ -1,3 +1,7 @@
+.work-slider *:focus {
+  outline: none !important;
+}
+
 /* dots in slider */
 .work-slider__slider .slick-dots li {
   margin: 0 10px;

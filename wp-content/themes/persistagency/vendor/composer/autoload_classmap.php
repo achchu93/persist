@@ -15,6 +15,7 @@ return array(
     'App\\View\\Components\\SocialIconsFooter' => $baseDir . '/app/View/Components/SocialIconsFooter.php',
     'App\\View\\Components\\SocialShare' => $baseDir . '/app/View/Components/SocialShare.php',
     'App\\View\\Composers\\App' => $baseDir . '/app/View/Composers/App.php',
+    'App\\View\\Composers\\BlockFooterCta' => $baseDir . '/app/View/Composers/BlockFooterCta.php',
     'App\\View\\Composers\\Page' => $baseDir . '/app/View/Composers/Page.php',
     'App\\View\\Composers\\Post' => $baseDir . '/app/View/Composers/Post.php',
     'Attribute' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',

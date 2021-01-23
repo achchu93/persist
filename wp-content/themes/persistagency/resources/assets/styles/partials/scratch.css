@@ -1,3 +1,17 @@
+/* common */
+.scratch {
+  position: relative;
+}
+.scratch::before,
+.scratch::after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 100%;
+  background-size: cover;
+  z-index: 10;
+}
+
 /* white */
 .scratch-white {
   position: relative;
@@ -68,4 +82,17 @@
   background-image: url('../images/scratch-black-down.png');
   bottom: -82px;
   height: 82px;
+}
+
+/* red */
+.scratch-red__up::before {
+  background-image: url('../images/scratch-red-up.png');
+  height: 40px;
+  top: -40px;
+}
+
+.scratch-red__down::after {
+  background-image: url('../images/scratch-red-down.png');
+  bottom: -63px;
+  height: 63px;
 }
