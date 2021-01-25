@@ -30,6 +30,7 @@ module.exports = {
         primary: '#FFCA17',
         secondary: '#EC1E45',
         red: '#EC1E45',
+        red2: '#FF0434',
         yellow: '#FFCA17',
         facebook: '#3977f2',
         twitter: '#40a1f2',

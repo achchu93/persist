@@ -1,13 +1,15 @@
 # run: tmuxinator start -p tmuxinator.yml
 name: persist-theme
 
-pre_window: docker-compose up -d
+on_project_start: 
+  - docker-compose up -d
+  - open http://persist.localhost/
 
 windows:
   - watchers:
       - nvm use 14
       - composer install
       - yarn
+      - yarn build
       - yarn start
-  - editor: nvim
-
+  - editor: $EDITOR
