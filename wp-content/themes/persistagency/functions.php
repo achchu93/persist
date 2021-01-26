@@ -42,7 +42,7 @@ collect([
     'adminbar-buttons',
     'clean-dashboard',
     'allow-svg-uploads',
-    'shortcodes/social-icons',
+    'Shortcodes/social-icons',
     'Blocks/block-big-image',
     'Blocks/block-case-studies-list',
     'Blocks/block-contact',
