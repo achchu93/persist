@@ -11,8 +11,6 @@ class Page extends Composer
   public function with()
   {
     return [
-      'header_background' => get_field('header_background'),
-      'header_background_mobile' => get_field('header_background_mobile'),
       'header_style' => get_field('header_style') ?? 'black',
       'show_email' => get_field('show_email'),
       'show_floating_social_icons' => get_field('show_floating_social_icons'),

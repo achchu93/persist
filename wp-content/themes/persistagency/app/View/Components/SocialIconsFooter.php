@@ -11,7 +11,7 @@ class SocialIconsFooter extends Component
         if (!function_exists('get_field')) {
             return;
         }
-        return $this->view('components.social-icons-footer', [
+        return $this->view('components.social-icons', [
             'facebook' => get_field('facebook', 'option'),
             'twitter' => get_field('twitter', 'option'),
             'linkedin' => get_field('linkedin', 'option'),

@@ -3,7 +3,7 @@
   <div class="container mx-auto px-4 py-32 relative">
 
     @if (!empty($header))
-      <h2 class="bg-cover font-brushup inline-block leading-none pb-2 px-6 text-4xl text-white uppercase" style="background-image:url('@asset('images/brush-red.png')')">
+      <h2 class="bg-fill font-brushup inline-block leading-none pb-2 px-6 text-4xl text-white uppercase" style="background-image:url('@asset('images/brush-red.png')')">
         {{ $header }}
       </h2>
     @endif

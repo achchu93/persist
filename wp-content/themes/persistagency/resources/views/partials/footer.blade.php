@@ -20,11 +20,6 @@
 
       <div class="md:w-1/3 space-y-10">
         @php dynamic_sidebar('sidebar-footer3') @endphp
-
-        <div class="mt-5">
-          <x-social-icons-footer></x-social-icons-footer> 
-        </div>
-
       </div>
 
     </div>

@@ -16,6 +16,7 @@ module.exports = {
     typography: {
       default: {
         css: {
+          color: '#111215',
           a: {
             color: '#EC1E45',
             '&:hover': {
@@ -31,6 +32,9 @@ module.exports = {
         secondary: '#EC1E45',
         red: '#EC1E45',
         red2: '#FF0434',
+        blue: '#263076',
+        black: '#111215',
+        gray1: '#DDDDDF',
         yellow: '#FFCA17',
         facebook: '#3977f2',
         twitter: '#40a1f2',
@@ -51,7 +55,7 @@ module.exports = {
   variants: {},
   plugins: [
     require('@tailwindcss/typography')({
-      modifiers: ['lg'],
+      modifiers: [],
     }),
     require('@tailwindcss/custom-forms'),
   ],

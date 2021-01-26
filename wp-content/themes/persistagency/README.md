@@ -15,3 +15,9 @@ yarn
 yarn start         
  
 ```
+
+# Shortcodes
+
+Social Icons:
+
+`[social_icons]`

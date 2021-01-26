@@ -1,8 +1,8 @@
-<div class="work-slider scratch-white scratch-white__up scratch-white__down {{ $class }}">
+<div class="work-slider scratch  scratch-white__up scratch-white__down {{ $class }}">
   <div class="container mx-auto px-4 py-8">
 
     @if (!empty($title))
-      <h2 class="bg-cover font-brushup inline-block leading-none mx-16 pb-2 px-6 text-4xl uppercase" style="background-image:url('@asset('images/brush-yellow.png')')">
+      <h2 class="bg-fill font-brushup inline-block leading-none mx-16 pb-2 px-6 text-4xl uppercase" style="background-image:url('@asset('images/brush-yellow.png')')">
         {{ $title }}
       </h2>
     @endif

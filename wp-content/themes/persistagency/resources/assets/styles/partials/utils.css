@@ -2,3 +2,7 @@
 .dummy * {
   outline: 1px dashed #ff00007a;
 }
+
+.bg-fill {
+  background-size: 100% 100%;
+}
