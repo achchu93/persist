@@ -1,3 +1,16 @@
+
+
+
+@font-face {
+  font-family: 'Klavika';
+  src: url('../fonts/klavika-regular.eot?') format('eot'),
+       url('../fonts/klavika-regular.woff2') format('woff2'),
+       url('../fonts/klavika-regular.woff') format('woff'),
+       url('../fonts/klavika-regular.otf')  format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 @font-face {
   font-family: 'Klavika';
   src: url('../fonts/klavika-bold-italic.eot?') format('eot'),

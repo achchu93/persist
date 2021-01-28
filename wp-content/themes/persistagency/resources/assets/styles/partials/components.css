@@ -8,14 +8,20 @@
   }
 }
 
+.btn-yellow,
 .btn-primary {
   @apply bg-yellow text-black;
 }
 
+.btn-red,
 .btn-secondary {
   @apply bg-red text-white;
 }
 
 .btn-black {
   @apply bg-black text-white;
+}
+
+.btn-blue {
+  @apply bg-blue text-white;
 }

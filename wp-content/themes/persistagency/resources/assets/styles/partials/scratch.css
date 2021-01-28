@@ -36,23 +36,27 @@
 }
 
 /*blue*/
-.scratch-blue {
-  position: relative;
-}
-.scratch-blue__down::after {
-  display: block;
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 73px;
-  background-image: url('../images/blue-scratch.png');
-  background-size: cover;
-  z-index: 10;
-}
 
 .scratch-blue__down::after {
+  background-image: url('../images/scratch-blue-down.png');
   bottom: -73px;
+  height: 73px;
 }
+
+/* blue-small */
+
+.scratch-blue-small__up::before {
+  background-image: url('../images/scratch-blue-small-up.png');
+  height: 42px;
+  top: -42px;
+}
+
+.scratch-blue-small__down::after {
+  background-image: url('../images/scratch-blue-small-down.png');
+  bottom: -79px;
+  height: 79px;
+}
+
 
 /* black */
 

@@ -7,15 +7,15 @@
         class="
                @if ($item->active)
                  @if ($style=="black")
-                   text-primary
+                   text-red
                  @else
-                   text-secondary
+                   text-yellow
                  @endif
                @else
                  @if ($style=="black")
-                   text-gray-900 hover:text-primary
+                   text-gray-900 hover:text-red
                  @else
-                   text-white hover:text-secondary
+                   text-white hover:text-yellow
                  @endif
                @endif
                leading-none inline-flex items-center justify-between px-2 py-1 font-medium transition-all duration-500 rounded-md focus:outline-none uppercase" 
@@ -36,15 +36,15 @@
                   class="
                          @if ($child->active)
                            @if ($style=="black")
-                             text-primary
+                             text-red
                            @else
-                             text-secondary
+                             text-yellow
                            @endif
                          @else
                            @if ($style=="black")
-                             text-gray-900 hover:text-primary
+                             text-gray-900 hover:text-red
                            @else
-                             text-white hover:text-secondary
+                             text-white hover:text-yellow
                            @endif
                          @endif
                          font-medium whitespace-no-wrap focus:outline-none uppercase"

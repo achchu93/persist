@@ -34,6 +34,7 @@ class App extends Composer
       'show_share_buttons_option' => $this->show_share_buttons_option(),
       'header_style' => get_field('header_style') ?? 'black',
       'say_hello_url' => $this->say_hello_url(),
+      'hide_call_to_action_in_footer' => $this->hide_call_to_action_in_footer(),
     ];
   }
 
@@ -114,6 +115,13 @@ class App extends Composer
   {
     if (function_exists('get_field')) {
       return get_field('say_hello_url', 'option');
+    }
+  }
+
+  public function hide_call_to_action_in_footer()
+  {
+    if (function_exists('get_field')) {
+      return get_field('hide_call_to_action_in_footer', 'option');
     }
   }
 }

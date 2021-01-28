@@ -1,5 +1,5 @@
 <div class="{{ $class }}">
-  <div class="container mx-auto pb-24 pt-20 px-4">
+  <div class="container mx-auto pb-24 pt-20 px-4 xl:pb-32">
 
     @if (!empty($header))
       <h2 class="bg-fill font-brushup inline-block leading-none pb-2 px-6 text-4xl text-white uppercase" style="background-image:url('@asset('images/brush-red.png')')">
@@ -12,7 +12,7 @@
     @endif
 
     @if (!empty($items))
-      <div class="gap-4 grid justify-center max-w-5xl grid-cols-2 md:lg:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mt-6 mx-auto xl:gap-x-10 xl:gap-y-24 xl:mt-16">
+      <div class="gap-4 grid grid-cols-2 justify-center lg:grid-cols-4 max-w-5xl md:lg:grid-cols-3 mt-6 mx-auto xl:gap-x-10 xl:gap-y-20 xl:grid-cols-5 xl:mt-16">
 
         @foreach ($items as $item)
           <div class="">

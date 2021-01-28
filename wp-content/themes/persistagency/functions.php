@@ -46,8 +46,11 @@ collect([
     'Blocks/block-big-image',
     'Blocks/block-case-studies-list',
     'Blocks/block-contact',
+    'Blocks/block-cta',
+    'Blocks/block-header-scratch',
     'Blocks/block-hero',
     'Blocks/block-hero-small',
+    'Blocks/block-our-partners',
     'Blocks/block-our-team',
     'Blocks/block-our-work',
     'Blocks/block-statement-red',
@@ -55,6 +58,7 @@ collect([
     'Blocks/block-what-we-do',
     'Blocks/block-who-we-are',
     'Blocks/block-work-slider',
+    'Blocks/block-work-with',
 ])
     ->each(function ($file) {
         $file = "app/{$file}.php";
