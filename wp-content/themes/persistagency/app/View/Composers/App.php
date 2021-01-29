@@ -121,7 +121,7 @@ class App extends Composer
   public function hide_call_to_action_in_footer()
   {
     if (function_exists('get_field')) {
-      return get_field('hide_call_to_action_in_footer', 'option');
+      return get_field('hide_call_to_action_in_footer');
     }
   }
 }

@@ -1,4 +1,4 @@
-<div class="{{ $class }}
+<div class="{{ $class }} z-20
      {{ $variant == 'black' ? 'bg-black scratch scratch-black__up scratch-black__down text-white' : '' }}
      {{ $variant == 'blue' ? 'bg-blue scratch scratch-blue-small__up scratch-blue-small__down text-white' : '' }}
      {{ $variant == 'red' ? 'bg-red scratch scratch-red__up scratch-red__down text-white' : '' }}

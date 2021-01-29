@@ -5,7 +5,7 @@
   @yield('content')
 </main>
 
-@if (!empty($hide_call_to_action_in_footer))
+@if (!$hide_call_to_action_in_footer)
   @include('partials.block-footer-cta')
 @endif
 @include('partials.footer')

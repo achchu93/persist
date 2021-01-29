@@ -1,8 +1,8 @@
-<div class="work-slider scratch  scratch-white__up scratch-white__down {{ $class }}">
-  <div class="container mx-auto px-4 py-8">
+<div class="work-slider scratch scratch-white__up scratch-white__down {{ $class }}">
+  <div class="container max-w-screen-xl mx-auto px-4 py-8">
 
     @if (!empty($title))
-      <h2 class="bg-fill font-brushup inline-block leading-none mx-16 pb-2 px-6 text-4xl uppercase" style="background-image:url('@asset('images/brush-yellow.png')')">
+      <h2 class="bg-fill font-brushup inline-block leading-none pb-2 px-6 text-4xl uppercase" style="background-image:url('@asset('images/brush-yellow.png')')">
         {{ $title }}
       </h2>
     @endif
@@ -12,19 +12,30 @@
 
         @foreach ($items as $item)
           <div class="item">
-            <div class="flex flex-col md:flex-row flex-wrap justify-center w-full h-full py-4">
+            <div class="
+{{ $item['custom_class'] ? $item['custom_class'] : '' }}
+{{ $item['reverse'] ? 'md:flex-row-reverse' : 'md:flex-row ' }}
+              flex flex-col flex-wrap justify-center w-full h-full relative">
 
               @if ($item['illustration'])
                 <div class="md:w-7/12 relative">
-                  {!! wp_get_attachment_image($item['illustration']['id'], 'full', false, ['class' => 'w-full h-auto']) !!}
+                  {!! wp_get_attachment_image($item['illustration']['id'], 'full', false, ['class' => 'custom-illustration']) !!}
                 </div>
               @endif
 
               <div class="md:w-5/12">
 
+                @if (!empty($item['icons']))
+                  <div class="flex flex-row items-center space-x-4">
+                    @foreach ($item['icons'] as $icon)
+                      <img src="{{ $icon['url'] }}" class="w-6" />
+                    @endforeach
+                  </div>
+                @endif
+
                 @if (!empty($item['title']))
 
-                  <h3 class="font-bold leading-tight text-6xl">
+                  <h3 class="font-bold leading-tight text-6xl mt-2 relative">
                     <a href="{{ $item['url'] }}">
                       {{ $item['title'] }}
                     </a>
@@ -32,14 +43,14 @@
                 @endif
 
                 @if (!empty($item['excerpt']))
-                  <div class="leading-loose mt-2 text-xl">
+                  <div class="leading-loose mt-2 text-xl relative">
                     {{ $item['excerpt'] }}
                   </div>
                 @endif
 
                 <div class="mt-10">
 
-                  <a href="{{ $item['url'] }}" class="btn btn-primary">
+                  <a href="{{ $item['url'] }}" class="btn btn-primary relative">
                     View case Study
                   </a>
 
