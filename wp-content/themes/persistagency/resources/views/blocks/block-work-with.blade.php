@@ -1,4 +1,4 @@
-<div class="{{ $class }}">
+<div class="{{ $class }} block-work-with">
   <div class="container mx-auto pb-24 pt-20 px-4 xl:pb-32">
 
     @if (!empty($header))

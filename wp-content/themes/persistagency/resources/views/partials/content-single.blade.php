@@ -1,7 +1,7 @@
 <article @php(post_class())>
 
   <header>
-    <h1 class="text-3xl md:text-4xl lg:text-5xl font-title font-semibold mb-10 leading-tight">
+    <h1 class="hidden">
       {!! $title !!}
     </h1> 
     <x-featured :post="get_post()"></x-featured> 

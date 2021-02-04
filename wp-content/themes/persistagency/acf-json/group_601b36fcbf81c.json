@@ -1,31 +1,31 @@
 {
-    "key": "group_6011ea3be13a8",
-    "title": "Call to action",
+    "key": "group_601b36fcbf81c",
+    "title": "Block Case study intro",
     "fields": [
         {
-            "key": "field_6011ea53950ae",
+            "key": "field_601b36fcc44cb",
+            "label": "Title",
+            "name": "title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_601b36fcc4567",
             "label": "Text",
             "name": "text",
-            "type": "text",
-            "instructions": "",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_6011ea58950af",
-            "label": "Link",
-            "name": "link",
-            "type": "link",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -34,13 +34,17 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array"
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "default_value": "",
+            "delay": 0
         },
         {
-            "key": "field_601b4203a3a8b",
-            "label": "Author",
-            "name": "author",
-            "type": "text",
+            "key": "field_601b36fcc4691",
+            "label": "Image",
+            "name": "image",
+            "type": "image",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -49,38 +53,35 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         },
         {
-            "key": "field_6011ea5c950b0",
-            "label": "Variant",
-            "name": "variant",
-            "type": "select",
+            "key": "field_601b36fcc472a",
+            "label": "Reverse",
+            "name": "reverse",
+            "type": "true_false",
             "instructions": "",
-            "required": 1,
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
             },
-            "choices": {
-                "black": "black",
-                "blue": "blue",
-                "red": "red",
-                "blue-yellow": "blue-yellow"
-            },
-            "default_value": "black",
-            "allow_null": 0,
-            "multiple": 0,
+            "message": "",
+            "default_value": 0,
             "ui": 0,
-            "return_format": "value",
-            "ajax": 0,
-            "placeholder": ""
+            "ui_on_text": "",
+            "ui_off_text": ""
         }
     ],
     "location": [
@@ -88,7 +89,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/block-cta"
+                "value": "acf\/block-case-study-intro"
             }
         ]
     ],
@@ -100,5 +101,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1612399232
+    "modified": 1612396304
 }

@@ -1,4 +1,4 @@
-<div class="work-slider scratch scratch-white__up scratch-white__down {{ $class }}">
+<div class="work-slider scratch scratch-white__up scratch-white__down {{ $class }} block-work-slider">
   <div class="container max-w-screen-xl mx-auto px-4 py-8">
 
     @if (!empty($title))
@@ -19,7 +19,7 @@
 
               @if ($item['illustration'])
                 <div class="md:w-7/12 relative">
-                  {!! wp_get_attachment_image($item['illustration']['id'], 'full', false, ['class' => 'custom-illustration']) !!}
+                  {!! wp_get_attachment_image($item['illustration']['id'], 'full', false, ['class' => 'wp-thumbnail']) !!}
                 </div>
               @endif
 

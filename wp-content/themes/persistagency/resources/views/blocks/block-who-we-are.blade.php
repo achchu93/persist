@@ -1,4 +1,4 @@
-<div class="{{ $class }} scratch scratch-white__up2 scratch-white__down ">
+<div class="{{ $class }} scratch scratch-white__up2 scratch-white__down  block-who-we-are">
   <div class="container md:py-12 mx-auto px-4 py-8 xl:pb-24 xl:pt-20">
 
     @if (!empty($header))

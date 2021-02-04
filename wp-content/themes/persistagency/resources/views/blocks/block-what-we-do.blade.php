@@ -1,4 +1,4 @@
-<div class="{{ $class }} bg-primary text-black">
+<div class="{{ $class }} bg-primary text-black block-what-we-do">
 
   <div class="container mx-auto px-4 py-32 relative">
 

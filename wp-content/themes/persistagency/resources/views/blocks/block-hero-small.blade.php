@@ -1,4 +1,4 @@
-<div class="{{ $class }} relative overflow-hidden">
+<div class="{{ $class }} relative overflow-hidden block-hero-small">
 
   @if ($background)
     {!! wp_get_attachment_image($background['id'], 'full', false, ['class' => 'absolute w-full h-full object-cover']) !!}

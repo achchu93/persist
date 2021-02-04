@@ -27,7 +27,6 @@ class Post extends Composer
         return [
             'title' => $this->title(),
             'blog_default_image_option' => $this->blog_default_image_option(),
-
         ];
     }
 

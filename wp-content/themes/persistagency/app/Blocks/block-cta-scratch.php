@@ -2,17 +2,15 @@
 add_action('acf/init', function () {
   if (function_exists('acf_register_block')) {
     acf_register_block([
-      'name' => 'block-cta',
-      'title' => __('Call to action', 'sage'),
+      'name' => 'block-cta-scratch',
+      'title' => __('Cta scratch', 'sage'),
       'category' => 'sections',
       'icon' => 'screenoptions',
       'render_callback' => function ($block) {
-        echo Roots\view('blocks.block-cta', [
+        echo Roots\view('blocks.block-cta-scratch', [
           'class' => $block['className'] ?? '',
-          'text' => get_field('text'),
-          'link' => get_field('link'),
-          'author' => get_field('author'),
-          'variant' => get_field('variant') ?? 'black',
+          'text1' => get_field('text1'),
+          'text2' => get_field('text2'),
         ]);
       },
     ]);

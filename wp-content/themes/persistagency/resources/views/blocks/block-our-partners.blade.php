@@ -1,4 +1,4 @@
-<div class="{{ $class }} bg-black scratch scratch-black__up">
+<div class="{{ $class }} bg-black scratch scratch-black__up block-our-partners">
   <div class="container mx-auto pb-24 pt-20 px-4 xl:pb-32 ">
 
     @if (!empty($header))

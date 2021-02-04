@@ -1,4 +1,4 @@
-<div class="{{ $class }}">
+<div class="{{ $class }} block-text-image">
   <div class="container mx-auto px-4">
 
     <div class="item">
@@ -33,7 +33,7 @@
 
         @if ($image)
           <div class="md:w-7/12 relative xl:w-8/12">
-            {!! wp_get_attachment_image($image['id'], 'full', false, ['class' => '']) !!}
+            {!! wp_get_attachment_image($image['id'], 'full', false, ['class' => 'wp-thumbnail']) !!}
           </div>
         @endif
 

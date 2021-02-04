@@ -1,4 +1,4 @@
-<div class="scratch-red bg-red2 scratch scratch-red__up scratch-red__down text-white {{ $class }}">
+<div class="scratch-red bg-red2 scratch scratch-red__up scratch-red__down text-white {{ $class }} block-statement-red">
   <div class="container mx-auto px-4 py-12 text-center">
 
     @if (!empty($text))

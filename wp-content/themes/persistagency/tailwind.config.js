@@ -39,9 +39,6 @@ module.exports = {
 
       xl: '1280px',
       // => @media (min-width: 1280px) { ... }
-
-      '2xl': '1440px',
-      // => @media (min-width: 1440px) { ... }
     },
     extend: {
       colors: {
@@ -52,6 +49,7 @@ module.exports = {
         blue: '#263076',
         black: '#111215',
         gray1: '#DDDDDF',
+        gray2: '#F0F0F2',
         yellow: '#FFCA17',
         facebook: '#3977f2',
         twitter: '#40a1f2',
@@ -61,8 +59,11 @@ module.exports = {
         270: '270deg',
       },
       fontSize: {
+        '6xl': '4.375rem',
         '7xl': '5.06rem',
         '8xl': '6.25rem',
+        '9xl': '7rem',
+        '12xl': '12.5rem',
       },
       rotate: {
         '-8': '-8deg',
@@ -72,7 +73,7 @@ module.exports = {
   variants: {},
   plugins: [
     require('@tailwindcss/typography')({
-      modifiers: [],
+      modifiers: ['xl'],
     }),
     require('@tailwindcss/custom-forms'),
   ],
