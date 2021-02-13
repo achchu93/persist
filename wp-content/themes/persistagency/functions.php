@@ -61,6 +61,7 @@ collect([
     'Blocks/block-services-black',
     'Blocks/block-statement-red',
     'Blocks/block-story-stats',
+    'Blocks/block-story-stats-dark',
     'Blocks/block-text-image',
     'Blocks/block-values',
     'Blocks/block-what-we-do',

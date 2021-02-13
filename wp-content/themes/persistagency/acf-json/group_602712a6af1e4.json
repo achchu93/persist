@@ -1,9 +1,28 @@
 {
-    "key": "group_601b36fcbf81c",
-    "title": "Block Case study intro",
+    "key": "group_602712a6af1e4",
+    "title": "Block Story stats dark",
     "fields": [
         {
-            "key": "field_601b36fcc44cb",
+            "key": "field_602712a6b2c5a",
+            "label": "Header",
+            "name": "header",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_602712a6b2cba",
             "label": "Title",
             "name": "title",
             "type": "text",
@@ -22,7 +41,7 @@
             "maxlength": ""
         },
         {
-            "key": "field_601b36fcc4567",
+            "key": "field_602712a6b2d23",
             "label": "Text",
             "name": "text",
             "type": "wysiwyg",
@@ -34,14 +53,14 @@
                 "class": "",
                 "id": ""
             },
+            "default_value": "",
             "tabs": "all",
             "toolbar": "full",
             "media_upload": 1,
-            "default_value": "",
             "delay": 0
         },
         {
-            "key": "field_601b36fcc4691",
+            "key": "field_602712a6b2d84",
             "label": "Image",
             "name": "image",
             "type": "image",
@@ -65,28 +84,9 @@
             "mime_types": ""
         },
         {
-            "key": "field_601b36fcc472a",
-            "label": "Reverse",
-            "name": "reverse",
-            "type": "true_false",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "message": "",
-            "default_value": 0,
-            "ui": 0,
-            "ui_on_text": "",
-            "ui_off_text": ""
-        },
-        {
-            "key": "field_6027048aa21de",
-            "label": "Icons",
-            "name": "icons",
+            "key": "field_602712a6b2de3",
+            "label": "Stats",
+            "name": "stats",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -103,10 +103,10 @@
             "button_label": "",
             "sub_fields": [
                 {
-                    "key": "field_60270493a21df",
-                    "label": "Icon",
-                    "name": "icon",
-                    "type": "image",
+                    "key": "field_602712a6b7a6a",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -115,16 +115,30 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "array",
-                    "preview_size": "medium",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": ""
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_602712a6b7ad9",
+                    "label": "Number",
+                    "name": "number",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 }
             ]
         }
@@ -134,7 +148,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/block-case-study-intro"
+                "value": "acf\/block-story-stats-dark"
             }
         ]
     ],
@@ -146,5 +160,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1613169821
+    "modified": 1613173537
 }
