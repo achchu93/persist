@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./resources/assets/styles/editor.css"],"names":[],"mappings":"AAAA,mBAAkB;AAClB;EACE,iBAAgB;CAClB","file":"styles/editor.css","sourcesContent":["/* Editor styles */\n.block-editor-block-list__layout.is-root-container .wp-block {\n  max-width: unset;\n}\n"],"sourceRoot":""}

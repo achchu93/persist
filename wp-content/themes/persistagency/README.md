@@ -5,6 +5,12 @@
 - yarn
 - composer
 
+# Local setup
+- create folders
+	- /wp-content/themes/persistagency/storage/
+	- /wp-content/themes/persistagency/storage/framework/cache
+	- /wp-content/themes/persistagency/storage/framework/views
+
 # Develop
 
 ```
