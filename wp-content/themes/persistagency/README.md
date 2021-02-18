@@ -18,7 +18,7 @@
 nvm use 14         
 composer install   
 yarn               
-yarn start         
+yarn start
  
 ```
 
