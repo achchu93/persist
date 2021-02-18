@@ -6,10 +6,14 @@
 - composer
 
 # Local setup
-- create folders
-	- /wp-content/themes/persistagency/storage/
-	- /wp-content/themes/persistagency/storage/framework/cache
-	- /wp-content/themes/persistagency/storage/framework/views
+
+```
+
+create symlink:
+cd path-to-wp/wp-content/themes/persistagency/
+ln -s 'path-to-wp/wp-content/uploads/storage'
+
+```
 
 # Develop
 
@@ -21,6 +25,9 @@ yarn
 yarn start
  
 ```
+
+# Push to server
+yarn build:production
 
 # Shortcodes
 
