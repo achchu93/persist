@@ -11,7 +11,7 @@
 
 create symlink:
 cd path-to-wp/wp-content/themes/persistagency/
-ln -s 'path-to-wp/wp-content/uploads/storage'
+ln -s '../../uploads/storage'
 
 ```
 
