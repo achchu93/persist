@@ -8,10 +8,12 @@
 # Local setup
 
 ```
+create storage folder
+- wp-content/uploads/storage
 
-create symlink:
-cd path-to-wp/wp-content/themes/persistagency/
-ln -s '../../uploads/storage'
+create symlink (the ln -s command is relative so it needs to run from inside the theme folder)
+- cd path-to-wp/wp-content/themes/persistagency/
+- ln -s '../../uploads/storage'
 
 ```
 
