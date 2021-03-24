@@ -10,3 +10,24 @@ body {
   font-family: Klavika, sans-serif;
 }
 
+.mobile-menu {
+	display: none !important;
+}
+
+.block-hero {
+	width: 100vw;
+}
+
+.block-hero svg {
+	width: 100vw !important;
+	height: auto !important;
+}
+
+.page-footer {
+	background: #fff;
+}
+
+.slick-slide {
+	overflow: hidden;
+	position: relative;	
+}

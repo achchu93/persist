@@ -3,6 +3,25 @@
     "title": "Hero",
     "fields": [
         {
+            "key": "field_605a6d1bf99ce",
+            "label": "Lottie Animation Path",
+            "name": "animation_path",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_600a3ea50164f",
             "label": "Header",
             "name": "header",
@@ -63,5 +82,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1611285356
+    "modified": 1616539083
 }

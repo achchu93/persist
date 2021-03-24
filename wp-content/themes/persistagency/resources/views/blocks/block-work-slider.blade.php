@@ -1,4 +1,4 @@
-<div class="work-slider scratch scratch-white__up scratch-white__down {{ $class }} block-work-slider">
+<div class="work-slider scratch scratch-white__up scratch-white__down {{ $class }} block-work-slider anim-in anim-section h-screen">
   <div class="container max-w-screen-xl mx-auto px-4 py-8">
 
     @if (!empty($title))
@@ -18,7 +18,7 @@
               flex flex-col flex-wrap justify-center w-full h-full relative">
 
               @if ($item['illustration'])
-                <div class="md:w-7/12 relative">
+                <div class="md:w-7/12 relative slide-from-left">
                   {!! wp_get_attachment_image($item['illustration']['id'], 'full', false, ['class' => 'wp-thumbnail']) !!}
                 </div>
               @endif
@@ -35,7 +35,7 @@
 
                 @if (!empty($item['title']))
 
-                  <h3 class="font-bold leading-tight text-6xl mt-2 relative">
+                  <h3 class="font-bold leading-tight text-6xl mt-2 relative slide-from-right">
                     <a href="{{ $item['url'] }}">
                       {{ $item['title'] }}
                     </a>
@@ -43,14 +43,14 @@
                 @endif
 
                 @if (!empty($item['excerpt']))
-                  <div class="leading-loose mt-2 text-xl relative">
+                  <div class="leading-loose mt-2 text-xl relative slide-from-right">
                     {{ $item['excerpt'] }}
                   </div>
                 @endif
 
                 <div class="mt-10">
 
-                  <a href="{{ $item['url'] }}" class="btn btn-primary relative">
+                  <a href="{{ $item['url'] }}" class="btn btn-primary relative slide-from-right">
                     View case Study
                   </a>
 

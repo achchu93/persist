@@ -1,4 +1,4 @@
-<div class="{{ $class }} relative scratch scratch-blue__down block-values">
+<div class="{{ $class }} relative scratch scratch-blue__down block-values anim-in anim-section h-screen">
 
   @if ($background)
     {!! wp_get_attachment_image($background['id'], 'full', false, ['class' => 'absolute w-full h-full object-cover']) !!}

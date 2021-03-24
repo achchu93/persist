@@ -1,0 +1,39 @@
+html {
+	scroll-snap-type: y mandatory;
+}
+
+@keyframes fade-in {
+	from {opacity: 0;}
+		to {opacity: 1;}
+}
+.anim-in-element {
+	animation: fade-in 0s;
+}
+.anim-in {
+	opacity: 1;
+}
+	
+.anim-section {
+	display: flex;
+	align-items: center;
+	background-color: #fff;
+	scroll-snap-align: start;
+}
+
+.slide-from-left {
+	transform: translateX(-100vw);
+	transition: transform 1s ease-out;
+}
+
+.anim-in-element .slide-from-left {
+	transform: translateX(0);
+}
+
+.slide-from-right {
+	transform: translateX(100vw);
+	transition: transform 1s ease-out;
+}
+
+.anim-in-element .slide-from-right {
+	transform: translateX(0);
+}

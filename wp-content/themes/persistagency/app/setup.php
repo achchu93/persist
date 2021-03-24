@@ -17,6 +17,11 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_script('sage/vendor.js', asset('scripts/vendor.js')->uri(), ['jquery'], null, true);
     wp_enqueue_script('sage/app.js', asset('scripts/app.js')->uri(), ['sage/vendor.js', 'jquery'], null, true);
 
+    wp_enqueue_script('lottie', asset('scripts/lottie.min.js')->uri(), ['jquery'], null, true);
+    wp_enqueue_script('animations', asset('scripts/animations.js')->uri(), ['jquery'], null, true);
+		$translation_array = array( 'templateUrl' => get_stylesheet_directory_uri() );
+		wp_localize_script( 'animations', 'obj', $translation_array );
+
     wp_add_inline_script('sage/vendor.js', asset('scripts/manifest.js')->contents(), 'before');
 
     if (is_single() && comments_open() && get_option('thread_comments')) {

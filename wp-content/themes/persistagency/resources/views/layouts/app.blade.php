@@ -1,7 +1,7 @@
 <x-mobile-navigation></x-mobile-navigation>
 @include('partials.header')
 
-<main class="main flex-1">
+<main class="main flex-1 animation-content">
   @yield('content')
 </main>
 

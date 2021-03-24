@@ -1,5 +1,5 @@
-<div class="{{ $class }} relative block-hero overflow-hidden block-hero">
-
+<div data-animation="home-marquee" class="{{ $class }} fixed block-hero overflow-hidden block-hero h-screen anim-in">
+<?php /*
   @if ($background)
     {!! wp_get_attachment_image($background['id'], 'full', false, ['class' => 'absolute w-full h-full object-cover']) !!}
   @endif
@@ -13,5 +13,6 @@
     @endif
 
   </div>
-
+*/ ?>
 </div>
+<div class="relative h-screen anim-section opacity-0"></div>

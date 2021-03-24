@@ -1,4 +1,4 @@
-<div class="scratch-black bg-black scratch-black__up scratch-black__down text-white {{ $class }}">
+<div class="scratch-black bg-black scratch-black__up scratch-black__down text-white {{ $class }} anim-section">
   <div class="container mx-auto px-4 py-16 text-center">
 
     @if (!empty($title))
