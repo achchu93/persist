@@ -1,4 +1,4 @@
-<div data-animation="home-marquee" class="{{ $class }} fixed block-hero overflow-hidden block-hero h-screen anim-in">
+<div data-animation="home-marquee" class="{{ $class }} fixed block-hero overflow-hidden block-hero h-screen anim-in parallax">
 <?php /*
   @if ($background)
     {!! wp_get_attachment_image($background['id'], 'full', false, ['class' => 'absolute w-full h-full object-cover']) !!}

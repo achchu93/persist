@@ -1,5 +1,5 @@
 <div class="work-slider scratch scratch-white__up scratch-white__down {{ $class }} block-work-slider anim-in anim-section h-screen">
-  <div class="container max-w-screen-xl mx-auto px-4 py-8">
+  <div class="w-screen mx-auto px-4 py-8">
 
     @if (!empty($title))
       <h2 class="bg-fill font-brushup inline-block leading-none pb-2 px-6 text-4xl uppercase" style="background-image:url('@asset('images/brush-yellow.png')')">
@@ -15,7 +15,7 @@
             <div class="
 {{ $item['custom_class'] ? $item['custom_class'] : '' }}
 {{ $item['reverse'] ? 'md:flex-row-reverse' : 'md:flex-row ' }}
-              flex flex-col flex-wrap justify-center w-full h-full relative">
+              flex flex-col flex-wrap justify-center w-full h-full relative max-w-screen-xl mx-auto">
 
               @if ($item['illustration'])
                 <div class="md:w-7/12 relative slide-from-left">
@@ -23,7 +23,7 @@
                 </div>
               @endif
 
-              <div class="md:w-5/12">
+              <div class="md:w-5/12 slide-from-right delay-25">
 
                 @if (!empty($item['icons']))
                   <div class="flex flex-row items-center space-x-4">
@@ -35,7 +35,7 @@
 
                 @if (!empty($item['title']))
 
-                  <h3 class="font-bold leading-tight text-6xl mt-2 relative slide-from-right">
+                  <h3 class="font-bold leading-tight text-6xl mt-2 relative">
                     <a href="{{ $item['url'] }}">
                       {{ $item['title'] }}
                     </a>
@@ -43,14 +43,14 @@
                 @endif
 
                 @if (!empty($item['excerpt']))
-                  <div class="leading-loose mt-2 text-xl relative slide-from-right">
+                  <div class="leading-loose mt-2 text-xl relative">
                     {{ $item['excerpt'] }}
                   </div>
                 @endif
 
                 <div class="mt-10">
 
-                  <a href="{{ $item['url'] }}" class="btn btn-primary relative slide-from-right">
+                  <a href="{{ $item['url'] }}" class="btn btn-primary relative">
                     View case Study
                   </a>
 

@@ -3,9 +3,10 @@ let animSections = [];
 
 (function() {
 
-	var animElements;
+	var animElements, parallaxElems;
 
   function checkSection() {
+		parallaxSection();
 		// var scrolled = window.pageYOffset;
 
 		//fade in
@@ -30,8 +31,32 @@ let animSections = [];
 				// element.style.marginTop = - (scrolled * 0.2) + 'px';
       }
     }
+  }
 
+  function parallaxSection() {
+		var scrolled = window.pageYOffset;
 
+		//fade in
+    for (var i = 0; i < parallaxElems.length; i++) {
+      var element = parallaxElems[i];
+			// var dataAnim = element.dataset.animation;
+			
+      // var positionFromTop = animElements[i].getBoundingClientRect().top;
+      // if (positionFromTop - windowHeight <= 0) {
+
+      //   element.classList.add('anim-in-element');
+      //   element.classList.remove('anim-in');
+
+			// 	if(dataAnim && !animSections.includes(dataAnim)) {
+			// 		console.log(dataAnim);
+			// 		animSections.push(dataAnim);
+			// 		triggerLottie(element) 
+
+			// 	}
+				
+				// console.log(element.dataset.animation);
+				element.style.marginTop = - (scrolled * 0.2) + 'px';
+      }
   }
 
 	function triggerLottie(elem) {
@@ -55,6 +80,7 @@ let animSections = [];
   function init() {
 
 		animElements = document.querySelectorAll('.anim-in');
+		parallaxElems = document.querySelectorAll('.parallax');
     windowHeight = window.innerHeight - 200;
     checkSection();
 	}

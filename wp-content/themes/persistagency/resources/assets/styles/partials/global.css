@@ -31,3 +31,7 @@ body {
 	overflow: hidden;
 	position: relative;	
 }
+
+.slick-slide.slick-current {
+	overflow: visible;
+}
