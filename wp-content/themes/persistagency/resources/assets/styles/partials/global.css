@@ -14,15 +14,6 @@ body {
 	display: none !important;
 }
 
-.block-hero {
-	width: 100vw;
-}
-
-.block-hero svg {
-	width: 100vw !important;
-	height: auto !important;
-}
-
 .page-footer {
 	background: #fff;
 }
