@@ -2,9 +2,15 @@ html {
 	scroll-snap-type: y mandatory;
 }
 
-.section-bg svg {
+.section-bg.w-full svg {
 	width: 100vw !important;
-	height: auto !important;
+}
+.section-bg.h-full svg {
+	height: 100vw !important;
+}
+
+.block-what-we-do .section-bg svg {
+	transform: translate3d(0px, -18%, 0px) !important;
 }
 
 @keyframes fade-in {
@@ -12,10 +18,14 @@ html {
 		to {opacity: 1;}
 }
 .anim-in-element {
-	animation: fade-in 0s;
+	animation: fade-in 0.25s;
 }
 .anim-in {
-	opacity: 1;
+	opacity: 0;
+}
+
+.anim-in-element.stagger-250 {
+	animation-delay: calc(counter(my-counter) * 250ms);
 }
 	
 .anim-section {
@@ -49,4 +59,17 @@ html {
 
 .parallax {
 	/* transition: transform 0.05s; */
+}
+
+.anim-mask-from-left {
+	overflow: hidden;
+	max-width: 0;
+}
+
+.anim-in-element .anim-mask-from-left {
+	max-width: 100%;
+}
+
+.anim-in-element .anim-fade-in {
+	transition: transform 0.05s;
 }

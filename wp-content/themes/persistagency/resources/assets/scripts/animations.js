@@ -3,7 +3,33 @@ let animSections = [];
 
 (function() {
 
-	var animElements, parallaxElems;
+	var animElements, parallaxElems, lotties = {};
+
+	function buildLotties() {
+		console.log('buildLotties', lotties);
+
+    for (var i = 0; i < animElements.length; i++) {
+      var element = animElements[i];
+			var dataAnim = element.dataset.animation;
+
+			if(dataAnim && !animSections.includes(dataAnim)) {
+				let animation = bodymovin.loadAnimation( {
+					container: element.querySelector('.section-bg'),
+					renderer: 'svg',
+					loop: false,
+					autoplay: false,
+					path: obj.templateUrl + '/dist/animations/'+dataAnim+'/data.json',
+					rendererSettings: {
+						preserveAspectRatio: 'xMinYMin slice'
+					}
+				
+				} );
+				lotties[dataAnim] = animation;
+			}
+			
+    }
+		console.log('buildLotties', lotties);
+	}
 
   function checkSection() {
 		parallaxSection();
@@ -21,7 +47,7 @@ let animSections = [];
         element.classList.remove('anim-in');
 
 				if(dataAnim && !animSections.includes(dataAnim)) {
-					console.log(dataAnim);
+					// console.log(dataAnim);
 					animSections.push(dataAnim);
 					triggerLottie(element) 
 
@@ -48,28 +74,21 @@ let animSections = [];
   }
 
 	function triggerLottie(elem) {
-		console.log('triggerLottie');
-		let animation = bodymovin.loadAnimation( {
-			container: elem.querySelector('.section-bg'),
-			renderer: 'svg',
-			loop: false,
-			autoplay: true,
-			path: obj.templateUrl + '/dist/animations/'+elem.dataset.animation+'/data.json',
-		} );
-
-		setTimeout(() => { 
-			animation.play();
-		}, 250);		
-
+		console.log('triggerLottie', elem.dataset.animation);
+		if(lotties[elem.dataset.animation] != 'undefined') {
+			setTimeout(() => { 
+				lotties[elem.dataset.animation].play();
+			}, 250);		
+		}
 	}
 
   window.addEventListener('scroll', checkSection);
 
   function init() {
-
 		animElements = document.querySelectorAll('.anim-in');
 		parallaxElems = document.querySelectorAll('.parallax');
     windowHeight = window.innerHeight - 200;
+		buildLotties();
     checkSection();
 	}
 

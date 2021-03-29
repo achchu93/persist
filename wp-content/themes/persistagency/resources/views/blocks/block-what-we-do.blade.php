@@ -1,5 +1,5 @@
-<div class="{{ $class }} relative bg-primary text-black block-what-we-do anim-in anim-section h-screen">
-
+<div data-animation="what-wedo" class="{{ $class }} relative text-black block-what-we-do anim-in anim-section h-screen">
+	<div class="section-bg absolute w-full h-full object-cover"> </div>
   <div class="container mx-auto px-4 py-32 relative">
 
     @if (!empty($header))
@@ -18,7 +18,7 @@
             <div class="gap-12 grid justify-between">
 
               @foreach ($items as $item)
-                <div class="flex flex-col items-center">
+                <div class="flex flex-col items-center relative anim-in anim-mask-from-left stagger-250">
 
                   @if ($item['titleLines'] && count($item['titleLines']))
                     @foreach ($item['titleLines'] as $title)
@@ -30,7 +30,7 @@
                           @php unset($item['icon']) @endphp
                         @endif
 
-                        <div class="font-brushup leading-none md:text-4xl text-3xl xl:text-5xl">{!! $title !!}</div>
+                        <div class="font-brushup leading-none md:text-4xl text-3xl xl:text-5xl anim-in anim-fade-in">{!! $title !!}</div>
 
                       </div>
                     @endforeach

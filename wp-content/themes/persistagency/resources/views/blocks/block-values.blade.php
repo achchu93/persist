@@ -1,8 +1,8 @@
 <div data-animation="our-values" class="{{ $class }} relative scratch scratch-blue__down block-values anim-in anim-section h-screen">
-
+	<div class="section-bg absolute w-full h-full object-cover"> </div>
   @if ($background)
     {{-- {!! wp_get_attachment_image($background['id'], 'full', false, ['class' => 'absolute w-full h-full object-cover']) !!} --}}
-		<div class="section-bg absolute w-full h-full object-cover"> </div>
+		
   @endif
 
   <div class="container mx-auto px-4 py-32 relative">

@@ -1,4 +1,4 @@
-<div class="{{ $class }} bg-black text-white scratch scratch-black__up scratch-black__down block-services-black">
+<div class="{{ $class }} bg-black text-white scratch scratch-black__up scratch-black__down block-services-black anim-section">
   <div class="container lg:px-8 max-w-screen-lg mx-auto px-4 py-16 xl:py-20">
 
     <div class="flex flex-col items items-center lg:flex-row lg:items-start lg:justify-between lg:space-x-5 lg:space-y-0 space-x-0 space-y-20">

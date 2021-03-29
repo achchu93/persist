@@ -1,4 +1,4 @@
-<div class="{{ $class }} block-text-image">
+<div class="{{ $class }} block-text-image anim-section">
   <div class="container mx-auto px-4">
 
     <div class="{{ $reverse ? 'md:flex-row-reverse md:space-x-reverse' : 'md:flex-row ' }} flex flex-col md:space-x-12 justify-center w-full h-full py-4">

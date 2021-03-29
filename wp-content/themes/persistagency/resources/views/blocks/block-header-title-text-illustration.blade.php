@@ -1,4 +1,4 @@
-<div class="{{ $class }} block-header-title-text-illustration">
+<div class="{{ $class }} block-header-title-text-illustration anim-section">
   <div class="container max-w-screen-xl mx-auto px-4 py-32">
 
     @if (!empty($header))
