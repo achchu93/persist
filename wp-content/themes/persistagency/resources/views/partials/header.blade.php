@@ -1,4 +1,4 @@
-<header class="absolute w-full z-10">
+<header class="absolute w-full z-10 start-fade-in slide-from-top delay-25 ">
   <div class="container flex flex-col items-start justify-between md:flex-row md:py-2 mx-auto px-5">
     <a href="{{ $home_url }}" title="{{ $site_name }}" class="md:ml-0 md:mt-0 md:px-0 md:w-auto mt-3 px-3 w-64">
       @if ($header_style == 'black' && $header_logo_black)

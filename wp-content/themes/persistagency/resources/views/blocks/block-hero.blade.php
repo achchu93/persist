@@ -1,7 +1,7 @@
-<div data-animation="home-marquee-bg" class="{{ $class }} fixed block-hero overflow-hidden block-hero h-screen w-full anim-in parallax">
+<div data-animation="home-marquee-bg" data-animationdelay="0" class="{{ $class }} fixed block-hero overflow-hidden block-hero h-screen w-full anim-in parallax">
 <div class="section-bg absolute w-full h-full object-cover"></div>
 
-	<div data-animation="home-marquee-txt" class="anim-in ">
+	<div data-animation="home-marquee-txt" data-animationdelay="1000" class="anim-in">
 		<div class="section-bg absolute object-cover w-7/12 bottom-0 left-0 ml-20 mb-20"></div>
 	</div>
 <?php /*

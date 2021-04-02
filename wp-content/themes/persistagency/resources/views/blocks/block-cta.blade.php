@@ -3,7 +3,7 @@
      {{ $variant == 'blue' ? 'bg-blue scratch scratch-blue-small__up scratch-blue-small__down text-white' : '' }}
      {{ $variant == 'blue-yellow' ? 'bg-blue scratch scratch-blue-small__up scratch-blue-small__down text-white' : '' }}
      {{ $variant == 'red' ? 'bg-red scratch scratch-red__up scratch-red__down text-white' : '' }}
-     ">
+     anim-section ">
   <div class="container max-w-screen-lg mx-auto px-4 py-16 text-center">
 
     @if (!empty($text))

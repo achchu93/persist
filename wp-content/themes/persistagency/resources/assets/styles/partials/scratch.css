@@ -12,7 +12,7 @@
   z-index: 10;
 }
 
-/* white */
+/* white 
 .scratch-white__up::before {
   background-image: url('../images/scratch-white-up.png');
   filter: brightness(2);
@@ -34,16 +34,16 @@
   height: 190px;
   top: -190px;
 }
-
-/*blue*/
+*/
+/*blue
 
 .scratch-blue__down::after {
   background-image: url('../images/scratch-blue-down.png');
   bottom: -73px;
   height: 73px;
 }
-
-/* blue-small */
+*/
+/* blue-small 
 
 .scratch-blue-small__up::before {
   background-image: url('../images/scratch-blue-small-up.png');
@@ -56,12 +56,13 @@
   bottom: -79px;
   height: 79px;
 }
-
+*/
 /* black */
 
 .scratch-black {
   position: relative;
 }
+/*
 .scratch-black__up::before,
 .scratch-black__down::after {
   display: block;
@@ -83,8 +84,8 @@
   bottom: -82px;
   height: 82px;
 }
-
-/* red */
+*/
+/* red
 .scratch-red__up::before {
   background-image: url('../images/scratch-red-up.png');
   height: 40px;
@@ -96,8 +97,8 @@
   bottom: -63px;
   height: 63px;
 }
-
-/* gray */
+*/
+/* gray 
 .scratch-gray__up::before {
   background-image: url('../images/scratch-gray-up.png');
   height: 71px;
@@ -109,3 +110,4 @@
   bottom: -83px;
   height: 83px;
 }
+*/

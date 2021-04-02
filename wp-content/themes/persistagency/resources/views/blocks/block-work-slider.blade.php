@@ -1,8 +1,13 @@
-<div class="work-slider scratch scratch-white__up scratch-white__down {{ $class }} block-work-slider anim-in anim-section h-screen">
-  <div class="w-screen mx-auto px-4 py-8">
+<div data-animation="case-studies-bg" class="work-slider relative {{ $class }} block-work-slider anim-in fade-in anim-section h-screen">
+  <div class="section-bg absolute w-full h-full object-cover"> </div>
+	{{-- <div data-animation="case-studies-splatter" data-animationdelay="500" class="anim-in">
+		<div class="section-bg absolute object-cover w-7/12 bottom-0 left-0 ml-20 mb-20"></div>
+	</div> --}}
+
+	<div class="w-screen mx-auto px-4 py-8">
 
     @if (!empty($title))
-		<div class="max-w-screen-xl mx-auto">
+		<div class="max-w-screen-xl mx-auto fade-in-element stagger-1">
       <h2 class="bg-fill font-brushup inline-block leading-none pb-2 px-6 text-4xl uppercase" style="background-image:url('@asset('images/brush-yellow.png')')">
         {{ $title }}
       </h2>

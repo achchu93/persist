@@ -1,4 +1,4 @@
-<div class="{{ $class }} z-20 block-cta-scratch bg-black scratch scratch-black__up scratch-black__down">
+<div class="{{ $class }} z-20 block-cta-scratch bg-black scratch scratch-black__up scratch-black__down anim-section">
   <div class="container mx-auto px-4 py-32 text-center xl:py-56">
 
     @if (!empty($text1))

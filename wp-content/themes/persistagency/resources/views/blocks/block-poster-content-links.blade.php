@@ -1,4 +1,4 @@
-<div class="{{ $class }} block-background-and-story">
+<div class="{{ $class }} block-background-and-story anim-section">
 
   <div class="py-20">
 

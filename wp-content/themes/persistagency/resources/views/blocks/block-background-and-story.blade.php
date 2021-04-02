@@ -1,4 +1,4 @@
-<div class="{{ $class }} block-background-and-story relative bg-gray-900">
+<div class="{{ $class }} block-background-and-story relative bg-gray-900 anim-section">
 
   @if ($image)
     {!! wp_get_attachment_image($image['id'], 'full', false, ['class' => 'wp-thumbnail absolute object-cover w-full h-full']) !!}

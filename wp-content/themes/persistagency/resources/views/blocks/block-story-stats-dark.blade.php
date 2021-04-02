@@ -1,4 +1,4 @@
-<div class="{{ $class }} block-story-stats relative">
+<div class="{{ $class }} block-story-stats relative anim-section">
 
   @if ($image)
     {!! wp_get_attachment_image($image['id'], 'full', false, ['class' => 'h-full w-full object-cover wp-thumbnail absolute']) !!}

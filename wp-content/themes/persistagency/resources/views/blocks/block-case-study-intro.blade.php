@@ -1,4 +1,4 @@
-<div class="{{ $class }} block-case-study-intro bg-gray2 scratch scratch-gray__down">
+<div class="{{ $class }} block-case-study-intro bg-gray2 scratch scratch-gray__down anim-section">
   <div class="container mx-auto px-4 py-8 xl:py-20">
 
     <div class="item">

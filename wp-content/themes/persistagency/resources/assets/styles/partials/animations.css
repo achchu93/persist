@@ -1,5 +1,5 @@
 html {
-	scroll-snap-type: y mandatory;
+	/* scroll-snap-type: y mandatory; */
 }
 
 .section-bg.w-full svg {
@@ -17,15 +17,27 @@ html {
 	from {opacity: 0;}
 		to {opacity: 1;}
 }
-.anim-in-element {
-	animation: fade-in 0.25s;
-}
-.anim-in {
-	opacity: 0;
+
+@keyframes fade-in-stagger {
+	0% { opacity:0; }
+	75% { opacity:0; }
+	100% { opacity:1; }
 }
 
-.anim-in-element.stagger-250 {
-	animation-delay: calc(counter(my-counter) * 250ms);
+@keyframes top-slide-in-stagger {
+	0% { transform: translateY(-100vh) }
+	75% { transform: translateY(-100vh) }
+	100% { transform: translateY(0) }
+}
+
+.start-fade-in.fade-in-element, .start-fade-in .fade-in-element {
+	animation-name: fade-in;
+	animation-duration: 0.25s;
+}
+
+.start-fade-in.fade-in-element.stagger-1, .start-fade-in .fade-in-element.stagger-1 {
+	animation-name: fade-in-stagger;
+	animation-duration: 2.5s;
 }
 	
 .anim-section {
@@ -37,25 +49,39 @@ html {
 
 .slide-from-left {
 	transform: translateX(-100vw);
-	transition: transform 1s ease-out;
+	transition: transform 0.5s ease-out;
 }
 
-.anim-in-element .slide-from-left {
+.start-fade-in .slide-from-left {
 	transform: translateX(0);
 }
 
 .slide-from-right {
 	transform: translateX(100vw);
-	transition: transform 1s ease-out;
+	transition: transform 0.5s ease-in;
 }
 
 .slide-from-right.delay-25 {
-	transition: transform 1s ease-out 0.25s;
+	transition: transform 0.5s ease-in 0.15s;
 }
 
-.anim-in-element .slide-from-right {
+.start-fade-in .slide-from-right {
 	transform: translateX(0);
 }
+
+
+.slide-from-top {
+}
+
+.slide-from-top.delay-25 {
+}
+
+.start-fade-in.slide-from-top {
+	animation-name: top-slide-in-stagger;
+	animation-duration: 4s;
+
+}
+
 
 .parallax {
 	/* transition: transform 0.05s; */
@@ -66,10 +92,10 @@ html {
 	max-width: 0;
 }
 
-.anim-in-element .anim-mask-from-left {
+.start-fade-in .anim-mask-from-left {
 	max-width: 100%;
 }
 
-.anim-in-element .anim-fade-in {
+.start-fade-in .anim-fade-in {
 	transition: transform 0.05s;
 }

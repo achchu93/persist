@@ -1,6 +1,6 @@
-<div data-animation="what-wedo" class="{{ $class }} relative text-black block-what-we-do anim-in anim-section h-screen">
+<div data-animation="what-wedo" class="{{ $class }} relative text-black block-what-we-do anim-in fade-in anim-section h-screen">
 	<div class="section-bg absolute w-full h-full object-cover"> </div>
-  <div class="container mx-auto px-4 py-32 relative">
+  <div class="container mx-auto px-4 py-32 relative fade-in-element stagger-1">
 
     @if (!empty($header))
       <h2 class="bg-fill font-brushup inline-block leading-none pb-2 px-6 text-4xl text-white uppercase" style="background-image:url('@asset('images/brush-red.png')')">

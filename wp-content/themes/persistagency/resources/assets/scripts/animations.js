@@ -20,8 +20,8 @@ let animSections = [];
 					autoplay: false,
 					path: obj.templateUrl + '/dist/animations/'+dataAnim+'/data.json',
 					rendererSettings: {
-						preserveAspectRatio: 'xMinYMin slice'
-					}
+						preserveAspectRatio: 'xMinYMin slice',
+					},
 				
 				} );
 				lotties[dataAnim] = animation;
@@ -43,8 +43,10 @@ let animSections = [];
       var positionFromTop = animElements[i].getBoundingClientRect().top;
       if (positionFromTop - windowHeight <= 0) {
 
-        element.classList.add('anim-in-element');
-        element.classList.remove('anim-in');
+				if(element.classList.contains('fade-in')){
+					element.classList.add('start-fade-in');
+					element.classList.remove('fade-in');
+				}
 
 				if(dataAnim && !animSections.includes(dataAnim)) {
 					// console.log(dataAnim);
@@ -74,11 +76,12 @@ let animSections = [];
   }
 
 	function triggerLottie(elem) {
-		console.log('triggerLottie', elem.dataset.animation);
+		if(!elem.dataset.animationdelay) elem.dataset.animationdelay = 0;
+		console.log('triggerLottie', elem.dataset.animationdelay);
 		if(lotties[elem.dataset.animation] != 'undefined') {
 			setTimeout(() => { 
 				lotties[elem.dataset.animation].play();
-			}, 250);		
+			}, elem.dataset.animationdelay);
 		}
 	}
 
@@ -90,11 +93,15 @@ let animSections = [];
     windowHeight = window.innerHeight - 200;
 		buildLotties();
     checkSection();
+		if( $('body.home').length ){
+			console.log('home');
+			document.documentElement.style.scrollSnapType = "y mandatory";
+			// Do stuff
+		}
+		
 	}
 
 	var windowHeight = 0;
 	init();
-
-
 
 } )();
