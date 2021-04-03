@@ -7,7 +7,7 @@
 	<div class="w-screen mx-auto px-4 py-8">
 
     @if (!empty($title))
-		<div class="max-w-screen-xl mx-auto fade-in-element stagger-1">
+		<div class="max-w-screen-xl mx-auto fade-in-element relative">
       <h2 class="bg-fill font-brushup inline-block leading-none pb-2 px-6 text-4xl uppercase" style="background-image:url('@asset('images/brush-yellow.png')')">
         {{ $title }}
       </h2>

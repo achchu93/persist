@@ -24,10 +24,13 @@ html {
 	100% { opacity:1; }
 }
 
-@keyframes top-slide-in-stagger {
+@keyframes top-slide-in {
 	0% { transform: translateY(-100vh) }
-	75% { transform: translateY(-100vh) }
 	100% { transform: translateY(0) }
+}
+
+.fade-in.fade-in-element, .fade-in .fade-in-element {
+	opacity: 0;
 }
 
 .start-fade-in.fade-in-element, .start-fade-in .fade-in-element {
@@ -36,8 +39,8 @@ html {
 }
 
 .start-fade-in.fade-in-element.stagger-1, .start-fade-in .fade-in-element.stagger-1 {
-	animation-name: fade-in-stagger;
-	animation-duration: 2.5s;
+	animation-name: fade-in;
+	animation-duration: 1s;
 }
 	
 .anim-section {
@@ -75,13 +78,14 @@ html {
 
 .slide-from-top.delay-25 {
 }
-
+.fade-in.slide-from-top  {
+	transform: translateY(-100vh);
+}
 .start-fade-in.slide-from-top {
-	animation-name: top-slide-in-stagger;
-	animation-duration: 4s;
+	animation-name: top-slide-in;
+	animation-duration: 0.25s;
 
 }
-
 
 .parallax {
 	/* transition: transform 0.05s; */

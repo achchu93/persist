@@ -1,11 +1,11 @@
-<div data-animation="our-values" class="{{ $class }} relative scratch scratch-blue__down block-values anim-in anim-section fade-in h-screen">
+<div data-animation="our-values" class="{{ $class }} relative block-values anim-in anim-section fade-in h-screen">
 	<div class="section-bg absolute w-full h-full object-cover"> </div>
   @if ($background)
     {{-- {!! wp_get_attachment_image($background['id'], 'full', false, ['class' => 'absolute w-full h-full object-cover']) !!} --}}
 		
   @endif
 
-  <div class="container mx-auto px-4 py-32 relative fade-in-element stagger-1">
+  <div class="container mx-auto px-4 py-32 relative fade-in-element">
 
     @if (!empty($header))
       <h2 class="bg-fill font-brushup inline-block leading-none pb-2 px-6 text-4xl text-white uppercase" style="background-image:url('@asset('images/brush-red.png')')">
