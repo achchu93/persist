@@ -1,1 +1,151 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{2:function(t,e,n){t.exports=n("ZtyG")},ZtyG:function(t,e){var n=[];!function(){var t,e,a={};function o(){!function(){for(var t=0;t<e.length;t++){var n=e[t],a=-.15*window.pageYOffset;n.style.transform="translate(0, ".concat(a,"px)")}}();for(var a=0;a<t.length;a++){var o=t[a],d=o.dataset.animation;t[a].getBoundingClientRect().top-s<=0&&d&&!n.includes(d)&&(n.push(d),i(o))}}function i(e){e.dataset.animationdelay||(e.dataset.animationdelay=0),console.log("triggerLottie",e.dataset.animationdelay),"undefined"!=a[e.dataset.animation]&&setTimeout((function(){a[e.dataset.animation].play(),a[e.dataset.animation].addEventListener("complete",(function(){console.log(e.dataset.animation,"done!"),function(e){for(var n=0;n<t.length;n++){var a=t[n];if(t[n].getBoundingClientRect().top-s<=0){if(console.log("fadeIn",e),"home-marquee-txt"==e){var o=document.getElementById("pageHeader");o.classList.add("start-fade-in"),o.classList.remove("fade-in")}a.classList.contains("fade-in")&&(a.classList.add("start-fade-in"),a.classList.remove("fade-in"))}}}(e.dataset.animation)}))}),e.dataset.animationdelay)}window.addEventListener("scroll",o);var s=0;t=document.querySelectorAll(".anim-in"),e=document.querySelectorAll(".parallax"),s=window.innerHeight-200,function(){console.log("buildLotties",a);for(var e=0;e<t.length;e++){var o=t[e],i=o.dataset.animation;if(i&&!n.includes(i)){var s=bodymovin.loadAnimation({container:o.querySelector(".section-bg"),renderer:"svg",loop:!1,autoplay:!1,path:obj.templateUrl+"/dist/animations/"+i+"/data.json",rendererSettings:{preserveAspectRatio:"xMinYMin slice"}});a[i]=s}}console.log("buildLotties",a)}(),o(),$("body.home").length&&(console.log("home"),document.documentElement.style.scrollSnapType="y mandatory")}()}},[[2,0]]]);
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["/scripts/animations"],{
+
+/***/ "./resources/assets/scripts/animations.js":
+/*!************************************************!*\
+  !*** ./resources/assets/scripts/animations.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var animSections = [];
+
+(function () {
+  var animElements,
+      parallaxElems,
+      lotties = {};
+
+  function buildLotties() {
+    console.log('buildLotties', lotties);
+
+    for (var i = 0; i < animElements.length; i++) {
+      var element = animElements[i];
+      var dataAnim = element.dataset.animation;
+
+      if (dataAnim && !animSections.includes(dataAnim)) {
+        var animation = bodymovin.loadAnimation({
+          container: element.querySelector('.section-bg'),
+          renderer: 'svg',
+          loop: false,
+          autoplay: false,
+          path: obj.templateUrl + '/dist/animations/' + dataAnim + '/data.json',
+          rendererSettings: {
+            preserveAspectRatio: 'xMinYMin slice'
+          }
+        });
+        lotties[dataAnim] = animation;
+      }
+    }
+
+    console.log('buildLotties', lotties);
+  }
+
+  function checkSection() {
+    parallaxSection(); // var scrolled = window.pageYOffset;
+    //fade in
+
+    for (var i = 0; i < animElements.length; i++) {
+      var element = animElements[i];
+      var dataAnim = element.dataset.animation;
+      var positionFromTop = animElements[i].getBoundingClientRect().top;
+
+      if (positionFromTop - windowHeight <= 0) {
+        // if(element.classList.contains('fade-in')){
+        // 	element.classList.add('start-fade-in');
+        // 	element.classList.remove('fade-in');
+        // }
+        if (dataAnim && !animSections.includes(dataAnim)) {
+          // console.log(dataAnim);
+          animSections.push(dataAnim);
+          triggerLottie(element);
+        } // console.log(element.dataset.animation);
+        // element.style.marginTop = - (scrolled * 0.2) + 'px';
+
+      }
+    }
+  }
+
+  function fadeInSection(section) {
+    for (var i = 0; i < animElements.length; i++) {
+      var element = animElements[i];
+      var positionFromTop = animElements[i].getBoundingClientRect().top;
+
+      if (positionFromTop - windowHeight <= 0) {
+        console.log('fadeIn', section);
+
+        if (section == 'home-marquee-txt') {
+          var pageHeader = document.getElementById('pageHeader');
+          pageHeader.classList.add('start-fade-in');
+          pageHeader.classList.remove('fade-in');
+        }
+
+        if (element.classList.contains('fade-in')) {
+          element.classList.add('start-fade-in');
+          element.classList.remove('fade-in');
+        }
+      }
+    }
+  }
+
+  function parallaxSection() {
+    for (var i = 0; i < parallaxElems.length; i++) {
+      var element = parallaxElems[i]; // if(debounceTimer) {
+      // 	window.clearTimeout(debounceTimer);
+      // }
+      // debounceTimer = window.setTimeout(function() {
+
+      var scrolled = window.pageYOffset;
+      var scrollPos = -(scrolled * 0.15);
+      element.style.transform = "translate(0, ".concat(scrollPos, "px)"); // }, 100);
+    }
+  }
+
+  function triggerLottie(elem) {
+    if (!elem.dataset.animationdelay) elem.dataset.animationdelay = 0;
+    console.log('triggerLottie', elem.dataset.animationdelay);
+
+    if (lotties[elem.dataset.animation] != 'undefined') {
+      setTimeout(function () {
+        lotties[elem.dataset.animation].play();
+        lotties[elem.dataset.animation].addEventListener('complete', function () {
+          console.log(elem.dataset.animation, 'done!');
+          fadeInSection(elem.dataset.animation);
+        });
+      }, elem.dataset.animationdelay);
+    }
+  }
+
+  window.addEventListener('scroll', checkSection);
+
+  function init() {
+    animElements = document.querySelectorAll('.anim-in');
+    parallaxElems = document.querySelectorAll('.parallax');
+    windowHeight = window.innerHeight - 200;
+    buildLotties();
+    checkSection();
+
+    if ($('body.home').length) {
+      console.log('home');
+      document.documentElement.style.scrollSnapType = "y mandatory"; // Do stuff
+    }
+  }
+
+  var windowHeight = 0;
+  init();
+})();
+
+/***/ }),
+
+/***/ 2:
+/*!******************************************************!*\
+  !*** multi ./resources/assets/scripts/animations.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/persist/wp-content/themes/persistagency/resources/assets/scripts/animations.js */"./resources/assets/scripts/animations.js");
+
+
+/***/ })
+
+},[[2,"/scripts/manifest"]]]);
+//# sourceMappingURL=animations.js.map
