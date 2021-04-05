@@ -1,6 +1,9 @@
 <ul class="font-medium font-title hidden items-center justify-center md:flex md:ml-auto py-6 text-base">
+@php
+$count = 0
+@endphp
   @foreach ($navigation as $item) 
-    <li class="navigation relative inline-block sm:mx-2 md:mx-4 lg:mx-8 xl:mx-16 {{ $item->classes ?? '' }} {{ $item->active ? 'active' : '' }} {{ $item->children? 'navigation__has-submenu':'' }}"> 
+    <li class="navigation relative inline-block sm:mx-2 md:mx-4 lg:mx-8 xl:mx-16 {{ $item->classes ?? '' }} {{ $item->active ? 'active' : '' }} {{ $item->children? 'navigation__has-submenu':'' }} slide" style="--index: {{++$count}};"> 
       <a 
         href="{{ $item->url }}"
         target="{{ $item->target }}"

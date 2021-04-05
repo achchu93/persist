@@ -1,4 +1,4 @@
-<div class="{{ $class }} block-case-studies-list anim-section">
+<div class="{{ $class }} block-case-studies-list">
   <div class="container md:py-20 mx-auto px-4 py-16 xl:py-24">
 
     @if (!empty($title))
@@ -11,17 +11,17 @@
       <div class="flex flex-col lg:mt-16 md:mt-10 mt-8 space-y-16 xl:mt-20 xl:space-y-24">
 
         @foreach ($items as $item)
-          <div class="{{ $item['class'] }} item">
+          <div class="{{ $item['class'] }} item anim-in scroll-fade-in">
 
             <div class="{{ $item['reverse']?'md:flex-row-reverse':'md:flex-row ' }} flex flex-col flex-wrap justify-center w-full h-full py-4">
 
               @if ($item['illustration'])
-                <div class="md:w-7/12 relative">
+                <div class="md:w-7/12 relative {{ $item['reverse']?'slide-from-right':'slide-from-left ' }}">
                   {!! wp_get_attachment_image($item['illustration']['id'], 'full', false, ['class' => 'w-full h-auto']) !!}
                 </div>
               @endif
 
-              <div class="md:w-5/12">
+              <div class="md:w-5/12 {{ $item['reverse']?'slide-from-left':'slide-from-right ' }}">
 
                 @if (!empty($item['title']))
 

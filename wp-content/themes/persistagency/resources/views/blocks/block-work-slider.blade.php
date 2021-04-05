@@ -1,6 +1,6 @@
-<div data-animation="case-studies-bg" class="work-slider relative {{ $class }} block-work-slider anim-in fade-in anim-section h-screen">
+<div data-animation="home-case-studies-bg" class="work-slider relative {{ $class }} block-work-slider anim-in fade-in anim-section h-screen">
   <div class="section-bg absolute w-full h-full object-cover"> </div>
-	{{-- <div data-animation="case-studies-splatter" data-animationdelay="500" class="anim-in">
+	{{-- <div data-animation="home-case-studies-splatter" data-animationdelay="500" class="anim-in">
 		<div class="section-bg absolute object-cover w-7/12 bottom-0 left-0 ml-20 mb-20"></div>
 	</div> --}}
 

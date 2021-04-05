@@ -234,8 +234,12 @@ body {
 }
 
 .start-fade-in.fade-in-element, .start-fade-in .fade-in-element {
+  opacity: 0;
   animation-name: fade-in;
-  animation-duration: 0.25s;
+  animation-duration: 0.5s;
+  --index: 0;
+  animation-delay: calc(0.05s * var(--index));
+  animation-fill-mode: forwards;
 }
 
 .start-fade-in.fade-in-element.stagger-1, .start-fade-in .fade-in-element.stagger-1 {
@@ -264,27 +268,30 @@ body {
   transition: transform 0.5s ease-in;
 }
 
-.slide-from-right.delay-25 {
-  transition: transform 0.5s ease-in 0.15s;
-}
-
 .start-fade-in .slide-from-right {
   transform: translateX(0);
 }
 
-.slide-from-top {
+.fade-in.slide-from-top,
+.fade-in.slide-from-top-stagger .slide  {
+  transform: translateY(-100vh);
 }
 
-.slide-from-top.delay-25 {
-}
-
-.fade-in.slide-from-top  {
+.start-fade-in.slide-from-top-stagger .slide {
   transform: translateY(-100vh);
 }
 
 .start-fade-in.slide-from-top {
   animation-name: top-slide-in;
   animation-duration: 0.25s;
+}
+
+#pageHeader.start-fade-in.slide-from-top-stagger .slide {
+  animation-name: top-slide-in;
+  animation-duration: 0.5s;
+  --index: 0;
+  animation-delay: calc(0.05s * var(--index));
+  animation-fill-mode: forwards;
 }
 
 .parallax {

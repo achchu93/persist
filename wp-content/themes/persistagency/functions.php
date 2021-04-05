@@ -54,6 +54,7 @@ collect([
     'Blocks/block-header-title-text-illustration',
     'Blocks/block-hero',
     'Blocks/block-hero-small',
+    'Blocks/block-lottie',
     'Blocks/block-our-partners',
     'Blocks/block-our-team',
     'Blocks/block-our-work',

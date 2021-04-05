@@ -1,4 +1,4 @@
-<div data-animation="what-wedo" class="{{ $class }} relative text-black block-what-we-do anim-in fade-in anim-section h-screen">
+<div data-animation="home-what-wedo" class="{{ $class }} relative text-black block-what-we-do anim-in fade-in anim-section h-screen">
 	<div class="section-bg absolute w-full h-full object-cover"> </div>
   <div class="container mx-auto px-4 py-32 relative fade-in-element stagger-1">
 

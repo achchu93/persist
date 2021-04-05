@@ -49,10 +49,11 @@ var animSections = [];
       var positionFromTop = animElements[i].getBoundingClientRect().top;
 
       if (positionFromTop - windowHeight <= 0) {
-        // if(element.classList.contains('fade-in')){
-        // 	element.classList.add('start-fade-in');
-        // 	element.classList.remove('fade-in');
-        // }
+        if (element.classList.contains('scroll-fade-in') && element.classList.contains('anim-in')) {
+          element.classList.add('start-fade-in');
+          element.classList.remove('fade-in');
+        }
+
         if (dataAnim && !animSections.includes(dataAnim)) {
           // console.log(dataAnim);
           animSections.push(dataAnim);
@@ -71,12 +72,6 @@ var animSections = [];
 
       if (positionFromTop - windowHeight <= 0) {
         console.log('fadeIn', section);
-
-        if (section == 'home-marquee-txt') {
-          var pageHeader = document.getElementById('pageHeader');
-          pageHeader.classList.add('start-fade-in');
-          pageHeader.classList.remove('fade-in');
-        }
 
         if (element.classList.contains('fade-in')) {
           element.classList.add('start-fade-in');
@@ -125,8 +120,14 @@ var animSections = [];
 
     if ($('body.home').length) {
       console.log('home');
-      document.documentElement.style.scrollSnapType = "y mandatory"; // Do stuff
+      document.documentElement.style.scrollSnapType = "y mandatory";
     }
+
+    setTimeout(function () {
+      var pageHeader = document.getElementById('pageHeader');
+      pageHeader.classList.add('start-fade-in');
+      pageHeader.classList.remove('fade-in');
+    }, 500);
   }
 
   var windowHeight = 0;

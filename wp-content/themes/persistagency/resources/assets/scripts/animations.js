@@ -43,10 +43,10 @@ let animSections = [];
       var positionFromTop = animElements[i].getBoundingClientRect().top;
       if (positionFromTop - windowHeight <= 0) {
 
-				// if(element.classList.contains('fade-in')){
-				// 	element.classList.add('start-fade-in');
-				// 	element.classList.remove('fade-in');
-				// }
+				if(element.classList.contains('scroll-fade-in') && element.classList.contains('anim-in')){
+					element.classList.add('start-fade-in');
+					element.classList.remove('fade-in');
+				}
 
 				if(dataAnim && !animSections.includes(dataAnim)) {
 					// console.log(dataAnim);
@@ -68,11 +68,6 @@ let animSections = [];
       var positionFromTop = animElements[i].getBoundingClientRect().top;
       if (positionFromTop - windowHeight <= 0) {
 				console.log('fadeIn', section);
-				if(section == 'home-marquee-txt') {
-					const pageHeader = document.getElementById('pageHeader');
-					pageHeader.classList.add('start-fade-in');
-					pageHeader.classList.remove('fade-in');
-				}
 				if(element.classList.contains('fade-in')){
 					element.classList.add('start-fade-in');
 					element.classList.remove('fade-in');
@@ -121,8 +116,14 @@ let animSections = [];
 		if( $('body.home').length ){
 			console.log('home');
 			document.documentElement.style.scrollSnapType = "y mandatory";
-			// Do stuff
 		}
+		setTimeout(function(){
+			const pageHeader = document.getElementById('pageHeader');
+			pageHeader.classList.add('start-fade-in');
+			pageHeader.classList.remove('fade-in');
+		}, 500);
+
+
 		
 	}
 

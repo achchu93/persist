@@ -1,6 +1,6 @@
-<header id="pageHeader" class="absolute w-full z-10 fade-in slide-from-top">
+<header id="pageHeader" class="absolute w-full z-10 fade-in slide-from-top-stagger">
   <div class="container flex flex-col items-start justify-between md:flex-row md:py-2 mx-auto px-5">
-    <a href="{{ $home_url }}" title="{{ $site_name }}" class="md:ml-0 md:mt-0 md:px-0 md:w-auto mt-3 px-3 w-64">
+    <a href="{{ $home_url }}" title="{{ $site_name }}" class="md:ml-0 md:mt-0 md:px-0 md:w-auto mt-3 px-3 w-64 slide" style="--index: 0;">
       @if ($header_style == 'black' && $header_logo_black)
         <img src="{{ $header_logo_black['url'] }}" alt="logo" class="h-auto w-full">
       @elseif ($header_style == 'white' && $header_logo_white)
@@ -13,7 +13,7 @@
     <x-navigation :style="$header_style"></x-navigation>
 
     @if ($say_hello_url)
-      <div class="font-semibold font-title hidden items-center justify-center md:block md:ml-auto py-5 text-base">
+      <div class="font-semibold font-title hidden items-center justify-center md:block md:ml-auto py-5 text-base slide" style="--index: 4;">
         <a href="{{ $say_hello_url }}" class="{{ $header_style == 'black' ? 'bg-yellow text-black ' : 'bg-black text-white' }} font-bold inline-block leading-none px-4 py-2 rounded-full select-none uppercase" data-id="{{ $item->dbId }}">
           Say hello
         </a>
