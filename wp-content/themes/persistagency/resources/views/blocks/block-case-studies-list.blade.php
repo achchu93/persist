@@ -1,4 +1,4 @@
-<div class="{{ $class }} block-case-studies-list">
+<div class="{{ $class }} block-case-studies-list overflow-hidden">
   <div class="container md:py-20 mx-auto px-4 py-16 xl:py-24">
 
     @if (!empty($title))
