@@ -1,4 +1,4 @@
-<div class="{{ $class }} block-work-with">
+<div class="{{ $class }} block-work-with scroll-fade-in anim-in">
   <div class="container mx-auto pb-24 pt-20 px-4 xl:pb-32">
 
     @if (!empty($header))
@@ -10,8 +10,8 @@
     @if (!empty($items))
       <div class="gap-4 grid grid-cols-2 justify-center lg:grid-cols-3 max-w-5xl mt-6 mx-auto xl:gap-x-10 xl:gap-y-5 xl:mt-16">
 
-        @foreach ($items as $item)
-          <div class="flex items-center justify-center">
+        @foreach ($items as $key=>$item)
+          <div class="flex items-center justify-center fade-in-element" style="--index: {{$key}};">
 
             @if (!empty($item['image']))
               {!! wp_get_attachment_image($item['image']['id'], 'full', false, ['class' => '']) !!}

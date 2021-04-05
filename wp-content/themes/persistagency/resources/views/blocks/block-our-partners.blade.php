@@ -1,8 +1,8 @@
-<div class="{{ $class }} bg-black scratch scratch-black__up block-our-partners">
+<div class="{{ $class }} bg-black scratch scratch-black__up block-our-partners scroll-fade-in anim-in">
   <div class="container mx-auto pb-24 pt-20 px-4 xl:pb-32 ">
 
     @if (!empty($header))
-      <h2 class="bg-fill font-brushup inline-block leading-none pb-2 px-6 text-4xl text-black uppercase" style="background-image:url('@asset('images/brush-yellow.png')')">
+      <h2 class="bg-fill font-brushup inline-block leading-none pb-2 px-6 text-4xl text-black uppercase fade-in-element" style="--index: 2; background-image:url('@asset('images/brush-yellow.png')')">
         {{ $header }}
       </h2>
     @endif
@@ -10,8 +10,8 @@
     @if (!empty($items))
       <div class="flex flex-col items-center justify-between lg:flex-row lg:items-start lg:space-x-20 lg:space-y-0 mt-16 space-y-24">
 
-        @foreach ($items as $item)
-          <div class="max-w-lg">
+        @foreach ($items as $key=>$item)
+          <div class="max-w-lg fade-in-element" style="--index: {{$key}};">
 
             <div class="flex flex-col items-end md:flex-row md:space-y-0 md:spacex space-x-0 space-y-10">
 

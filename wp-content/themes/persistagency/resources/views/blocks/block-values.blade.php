@@ -1,4 +1,4 @@
-<div data-animation="home-our-values" class="{{ $class }} relative block-values anim-in anim-section fade-in h-screen">
+<div data-animation="home-our-values" class="{{ $class }} relative block-values anim-in anim-section fade-in h-screen overflow-hidden">
 	<div class="section-bg absolute w-full h-full object-cover"> </div>
   @if ($background)
     {{-- {!! wp_get_attachment_image($background['id'], 'full', false, ['class' => 'absolute w-full h-full object-cover']) !!} --}}

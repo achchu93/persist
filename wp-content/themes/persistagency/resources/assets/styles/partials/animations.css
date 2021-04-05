@@ -38,14 +38,14 @@ html {
 	animation-name: fade-in;
 	animation-duration: 0.5s;
 	--index: 0;
-	animation-delay: calc(0.05s * var(--index));
+	animation-delay: calc(0.25s * var(--index));
 	animation-fill-mode: forwards;
 }
 
-.start-fade-in.fade-in-element.stagger-1, .start-fade-in .fade-in-element.stagger-1 {
+/* .start-fade-in.fade-in-element.stagger-1, .start-fade-in .fade-in-element.stagger-1 {
 	animation-name: fade-in;
 	animation-duration: 1s;
-}
+} */
 	
 .anim-section {
 	display: flex;
