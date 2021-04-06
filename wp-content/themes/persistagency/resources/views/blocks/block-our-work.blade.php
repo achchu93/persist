@@ -1,4 +1,4 @@
-<div data-animation="reusable-our-work-bg" data-animationdelay="0" class="{{ $class }} block-our-work anim-in fade-in anim-section relative">
+<div data-animation="reusable-our-work-bg" data-animationdelay="0" class="{{ $class }} block-our-work anim-in fade-in anim-section relative overflow-hidden">
 	<div class="section-bg absolute w-full h-full object-cover"></div>
 
   <div class="container relative mx-auto pb-32 pt-12 px-4 py-8">

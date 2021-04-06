@@ -1,6 +1,6 @@
 <header id="pageHeader" class="absolute w-full z-10 fade-in slide-from-top-stagger">
   <div class="container flex flex-col items-start justify-between md:flex-row md:py-2 mx-auto px-5">
-    <a href="{{ $home_url }}" title="{{ $site_name }}" class="md:ml-0 md:mt-0 md:px-0 md:w-auto mt-3 px-3 w-64 slide" style="--index: 0;">
+    <a href="{{ $home_url }}" title="{{ $site_name }}" class="md:ml-0 md:mt-0 md:px-0 md:w-auto mt-3 px-3 w-64 slide hidden sm:block" style="--index: 0;">
       @if ($header_style == 'black' && $header_logo_black)
         <img src="{{ $header_logo_black['url'] }}" alt="logo" class="h-auto w-full">
       @elseif ($header_style == 'white' && $header_logo_white)

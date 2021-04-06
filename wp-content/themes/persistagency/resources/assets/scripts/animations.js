@@ -113,8 +113,9 @@ let animSections = [];
     windowHeight = window.innerHeight - 200;
 		buildLotties();
     checkSection();
-		if( $('body.home').length ){
-			console.log('home');
+		console.log(document.body.clientWidth);
+		if( $('body.home').length && document.body.clientWidth > 640 ){
+			
 			document.documentElement.style.scrollSnapType = "y mandatory";
 		}
 		setTimeout(function(){
