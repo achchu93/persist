@@ -4,15 +4,23 @@
 
 /* dots in slider */
 .work-slider__slider .slick-dots li {
-  margin: 0 10px;
+  margin: 0 5px;
+  width: 10px;
+  height: 10px;
+}
+.work-slider__slider .slick-dots li button {
+  width: 10px;
+  height: 10px;
 }
 .work-slider__slider .slick-dots li button:before {
   content: '';
   background-color: black;
   border-radius: 100%;
   opacity: 1;
+  width: 10px;
+  height: 10px;
+  line-height: 10px;
 }
-
 .work-slider__slider .slick-dots li.slick-active button:before {
   background-color: red;
 }
