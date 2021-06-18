@@ -112,7 +112,7 @@
     padding-bottom: 22rem;
   }
 
-  .custom-blm-intro .item > .flex {
+  .custom-blm-intro .item>.flex {
     @apply items-center;
   }
 
@@ -120,4 +120,8 @@
     max-width: unset;
     margin-left: -10rem;
   }
+}
+
+.single.single-case-study .thumbnail-wrapper {
+  @apply bg-gray2;
 }
