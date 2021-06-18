@@ -4,16 +4,19 @@
   margin-top: 4rem;
 }
 
+.custom-what-we-do>.container>.flex {
+  @apply items-center
+}
+
 @screen xl {
   .custom-what-we-do {
     margin-top: 9rem;
   }
 
-  .custom-what-we-do img {
-    position: absolute;
+  .custom-what-we-do .wp-thumbnail {
     max-width: unset;
-    top: -10rem;
-    left: -7rem;
+    width: calc(100% + 7rem);
+    margin-left: -3rem;
   }
 }
 
@@ -58,10 +61,12 @@
 }
 
 @screen xl {
+
   /* custom-blm */
   .custom-blm {
     padding-bottom: 13rem;
   }
+
   .custom-blm .wp-thumbnail {
     position: absolute;
     width: 67rem;
@@ -69,12 +74,14 @@
     top: -2rem;
     left: -2rem;
   }
+
   /* custom-wisconsin */
   .custom-wisconsin {
     padding-top: 13rem;
     padding-bottom: 8rem;
     padding-left: 4rem;
   }
+
   .custom-wisconsin .wp-thumbnail {
     position: absolute;
     top: -17rem;
@@ -82,11 +89,13 @@
     width: 54rem;
     max-width: unset;
   }
+
   /* custom-just */
   .custom-just {
     padding-top: 8rem;
     padding-bottom: 15rem;
   }
+
   .custom-just .wp-thumbnail {
     position: absolute;
     max-width: unset;
@@ -102,6 +111,7 @@
   .custom-blm-intro {
     padding-bottom: 22rem;
   }
+
   .custom-blm-intro .wp-thumbnail {
     position: absolute;
     width: 1195px;

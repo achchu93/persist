@@ -93210,16 +93210,19 @@ video {
   margin-top: 4rem;
 }
 
+.custom-what-we-do>.container>.flex {
+  align-items: center
+}
+
 @media (min-width: 1280px) {
   .custom-what-we-do {
     margin-top: 9rem;
   }
 
-  .custom-what-we-do img {
-    position: absolute;
+  .custom-what-we-do .wp-thumbnail {
     max-width: unset;
-    top: -10rem;
-    left: -7rem;
+    width: calc(100% + 7rem);
+    margin-left: -3rem;
   }
 }
 
