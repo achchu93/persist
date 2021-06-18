@@ -112,12 +112,12 @@
     padding-bottom: 22rem;
   }
 
+  .custom-blm-intro .item > .flex {
+    @apply items-center;
+  }
+
   .custom-blm-intro .wp-thumbnail {
-    position: absolute;
-    width: 1195px;
-    height: auto;
     max-width: unset;
-    top: -126px;
-    left: -75px;
+    margin-left: -10rem;
   }
 }

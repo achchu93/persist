@@ -93320,13 +93320,13 @@ video {
     padding-bottom: 22rem;
   }
 
+  .custom-blm-intro .item > .flex {
+    align-items: center;
+  }
+
   .custom-blm-intro .wp-thumbnail {
-    position: absolute;
-    width: 1195px;
-    height: auto;
     max-width: unset;
-    top: -126px;
-    left: -75px;
+    margin-left: -10rem;
   }
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
