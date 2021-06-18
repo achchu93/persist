@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.page-footer .menu-item:not(:first-child){
+
+.page-footer {
+  background-color: #F0F0F2;
+}
+.page-footer .menu-item:not(:first-child) {
   margin-top: 1rem;
 }
