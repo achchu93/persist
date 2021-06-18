@@ -1,7 +1,8 @@
 .floating-icons__email {
-  transform: translateX(-35px) rotate(270deg);
-  top: 900px;
+  transform: translateX(-35px) translateY(-55px) rotate(270deg);
+  bottom: 10px;
 }
+
 .floating-icons__social {
-  top: 810px;
+  bottom: 10px;
 }
