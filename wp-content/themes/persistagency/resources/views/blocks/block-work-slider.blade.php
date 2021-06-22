@@ -35,7 +35,7 @@
                 @if (!empty($item['icons']))
                   <div class="flex flex-row items-center space-x-4">
                     @foreach ($item['icons'] as $icon)
-                      <img src="{{ $icon['url'] }}" class="w-6" />
+                      <img src="{{ $icon['url'] }}" class="w-10 h-10" />
                     @endforeach
                   </div>
                 @endif
