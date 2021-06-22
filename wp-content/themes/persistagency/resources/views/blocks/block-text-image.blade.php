@@ -9,7 +9,7 @@
 
           @if (!empty($icon))
             <div class="">
-              {!! wp_get_attachment_image($icon['id'], 'full', false, ['class' => 'h-5 w-5 relative z-10']) !!}
+              {!! wp_get_attachment_image($icon['id'], 'full', false, ['class' => 'h-10 w-10 relative z-10']) !!}
             </div>
           @endif
 
