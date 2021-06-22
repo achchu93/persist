@@ -199,10 +199,12 @@ body {
 @keyframes fade-in {
   from {
     opacity: 0;
+    transform: translateY(2rem);
   }
 
   to {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -305,7 +307,8 @@ body {
 
 .start-fade-in .anim-fade-in {
   transition: transform 0.05s;
-}.btn {
+}
+.btn {
   font-weight: 700;
   display: inline-block;
   line-height: 1;

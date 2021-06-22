@@ -14,8 +14,14 @@ html {
 }
 
 @keyframes fade-in {
-	from {opacity: 0;}
-		to {opacity: 1;}
+	from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes fade-in-stagger {
@@ -46,7 +52,7 @@ html {
 	animation-name: fade-in;
 	animation-duration: 1s;
 } */
-	
+
 .anim-section {
 	display: flex;
 	align-items: center;
@@ -91,7 +97,7 @@ html {
 	animation-duration: 0.5s;
 	--index: 0;
 	animation-delay: calc(0.05s * var(--index));
-	animation-fill-mode: forwards;	
+	animation-fill-mode: forwards;
 }
 
 .parallax {
