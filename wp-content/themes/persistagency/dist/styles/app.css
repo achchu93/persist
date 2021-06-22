@@ -180,7 +180,21 @@ body {
 
 .slick-slide.slick-current {
   overflow: visible;
-}html {
+}
+
+header.sticked-menu {
+  position: fixed;
+  background-color: rgba(0,0,0,.5);
+  animation-name: fade-in-top;
+  animation-duration: .35s;
+  animation-fill-mode: forwards;
+}
+
+header.sticked-menu a>img {
+  max-height: 80px;
+  width: auto;
+}
+html {
   /* scroll-snap-type: y mandatory; */
 }
 
@@ -208,30 +222,49 @@ body {
   }
 }
 
+@keyframes fade-in-top {
+  from {
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes fade-in-stagger {
-  0% { opacity:0;
+  0% {
+    opacity: 0;
   }
 
-  75% { opacity:0;
+  75% {
+    opacity: 0;
   }
 
-  100% { opacity:1;
+  100% {
+    opacity: 1;
   }
 }
 
 @keyframes top-slide-in {
-  0% { transform: translateY(-100vh)
+  0% {
+    transform: translateY(-100vh)
   }
 
-  100% { transform: translateY(0)
+  100% {
+    transform: translateY(0)
   }
 }
 
-.fade-in.fade-in-element, .fade-in .fade-in-element {
+.fade-in.fade-in-element,
+.fade-in .fade-in-element {
   opacity: 0;
 }
 
-.start-fade-in.fade-in-element, .start-fade-in .fade-in-element {
+.start-fade-in.fade-in-element,
+.start-fade-in .fade-in-element {
   opacity: 0;
   animation-name: fade-in;
   animation-duration: 0.5s;
@@ -271,7 +304,7 @@ body {
 }
 
 .fade-in.slide-from-top,
-.fade-in.slide-from-top-stagger .slide  {
+.fade-in.slide-from-top-stagger .slide {
   transform: translateY(-100vh);
 }
 

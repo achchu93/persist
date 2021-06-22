@@ -11,14 +11,27 @@ body {
 }
 
 .page-footer {
-	background: #fff;
+  background: #fff;
 }
 
 .slick-slide {
-	overflow: hidden;
-	position: relative;	
+  overflow: hidden;
+  position: relative;
 }
 
 .slick-slide.slick-current {
-	overflow: visible;
+  overflow: visible;
+}
+
+header.sticked-menu {
+  position: fixed;
+  background-color: rgba(0,0,0,.5);
+  animation-name: fade-in-top;
+  animation-duration: .35s;
+  animation-fill-mode: forwards;
+}
+
+header.sticked-menu a>img {
+  max-height: 80px;
+  width: auto;
 }

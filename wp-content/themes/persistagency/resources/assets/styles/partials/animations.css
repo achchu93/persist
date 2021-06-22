@@ -1,23 +1,37 @@
 html {
-	/* scroll-snap-type: y mandatory; */
+  /* scroll-snap-type: y mandatory; */
 }
 
 .section-bg.w-full svg {
-	width: 100vw !important;
+  width: 100vw !important;
 }
+
 .section-bg.h-full svg {
-	height: 100vw !important;
+  height: 100vw !important;
 }
 
 .block-what-we-do .section-bg svg {
-	transform: translate3d(0px, -18%, 0px) !important;
+  transform: translate3d(0px, -18%, 0px) !important;
 }
 
 @keyframes fade-in {
-	from {
+  from {
     opacity: 0;
     transform: translateY(2rem);
   }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-top {
+  from {
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -25,27 +39,42 @@ html {
 }
 
 @keyframes fade-in-stagger {
-	0% { opacity:0; }
-	75% { opacity:0; }
-	100% { opacity:1; }
+  0% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes top-slide-in {
-	0% { transform: translateY(-100vh) }
-	100% { transform: translateY(0) }
+  0% {
+    transform: translateY(-100vh)
+  }
+
+  100% {
+    transform: translateY(0)
+  }
 }
 
-.fade-in.fade-in-element, .fade-in .fade-in-element {
-	opacity: 0;
+.fade-in.fade-in-element,
+.fade-in .fade-in-element {
+  opacity: 0;
 }
 
-.start-fade-in.fade-in-element, .start-fade-in .fade-in-element {
-	opacity: 0;
-	animation-name: fade-in;
-	animation-duration: 0.5s;
-	--index: 0;
-	animation-delay: calc(0.25s * var(--index));
-	animation-fill-mode: forwards;
+.start-fade-in.fade-in-element,
+.start-fade-in .fade-in-element {
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 0.5s;
+  --index: 0;
+  animation-delay: calc(0.25s * var(--index));
+  animation-fill-mode: forwards;
 }
 
 /* .start-fade-in.fade-in-element.stagger-1, .start-fade-in .fade-in-element.stagger-1 {
@@ -54,65 +83,65 @@ html {
 } */
 
 .anim-section {
-	display: flex;
-	align-items: center;
-	background-color: #fff;
-	scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  scroll-snap-align: start;
 }
 
 .slide-from-left {
-	transform: translateX(-100vw);
-	transition: transform 0.5s ease-out;
+  transform: translateX(-100vw);
+  transition: transform 0.5s ease-out;
 }
 
 .start-fade-in .slide-from-left {
-	transform: translateX(0);
+  transform: translateX(0);
 }
 
 .slide-from-right {
-	transform: translateX(100vw);
-	transition: transform 0.5s ease-in;
+  transform: translateX(100vw);
+  transition: transform 0.5s ease-in;
 }
 
 .start-fade-in .slide-from-right {
-	transform: translateX(0);
+  transform: translateX(0);
 }
 
 .fade-in.slide-from-top,
-.fade-in.slide-from-top-stagger .slide  {
-	transform: translateY(-100vh);
+.fade-in.slide-from-top-stagger .slide {
+  transform: translateY(-100vh);
 }
 
 .start-fade-in.slide-from-top-stagger .slide {
-	transform: translateY(-100vh);
+  transform: translateY(-100vh);
 }
 
 .start-fade-in.slide-from-top {
-	animation-name: top-slide-in;
-	animation-duration: 0.25s;
+  animation-name: top-slide-in;
+  animation-duration: 0.25s;
 }
 
 #pageHeader.start-fade-in.slide-from-top-stagger .slide {
-	animation-name: top-slide-in;
-	animation-duration: 0.5s;
-	--index: 0;
-	animation-delay: calc(0.05s * var(--index));
-	animation-fill-mode: forwards;
+  animation-name: top-slide-in;
+  animation-duration: 0.5s;
+  --index: 0;
+  animation-delay: calc(0.05s * var(--index));
+  animation-fill-mode: forwards;
 }
 
 .parallax {
-	/* transition: transform 0.05s; */
+  /* transition: transform 0.05s; */
 }
 
 .anim-mask-from-left {
-	overflow: hidden;
-	max-width: 0;
+  overflow: hidden;
+  max-width: 0;
 }
 
 .start-fade-in .anim-mask-from-left {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 .start-fade-in .anim-fade-in {
-	transition: transform 0.05s;
+  transition: transform 0.05s;
 }
