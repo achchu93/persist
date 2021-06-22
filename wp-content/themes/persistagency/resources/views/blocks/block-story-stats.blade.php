@@ -42,7 +42,7 @@
 
               @if (!empty($stat['number']))
                 <div class="bg-fill font-brushup inline-block leading-none mt-4 px-6 relative text-7xl text-yellow uppercase xl:text-12xl z-10" style="background-image:url('@asset('images/brush-red-big.png')')">
-                  <div class="xl:-translate-y-5 transform xl:translate-x-3">{{ $stat['number'] }}</div>
+                  <div class="xl:-translate-y-5 transform xl:translate-x-3 stats-value">{{ $stat['number'] }}</div>
                 </div>
               @endif
 

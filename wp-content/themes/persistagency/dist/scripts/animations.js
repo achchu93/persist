@@ -109,7 +109,46 @@ var animSections = [];
     }
   }
 
+  function runStatsCounter() {
+    $('.stats-value').each(function () {
+      if ($(this).is('.progress') || $(this).is('.complete')) {
+        return;
+      }
+
+      var docViewTop = $(window).scrollTop();
+      var docViewBottom = docViewTop + $(window).height();
+      var elemTop = $(this).offset().top;
+      var elemBottom = elemTop + $(this).height();
+      var isVisible = elemBottom <= docViewBottom && elemTop >= docViewTop;
+
+      if (isVisible) {
+        var elem = $(this);
+        var thisText = $(this).text();
+        var statsValue = thisText.replace(/\D/g, '');
+        $(this).prop('Counter', 0).animate({
+          Counter: statsValue
+        }, {
+          duration: 4000,
+          easing: 'swing',
+          step: function step(now) {
+            var pieces = thisText.split(statsValue);
+            var formatted = Math.ceil(now).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+            elem.text(pieces.join(formatted));
+          },
+          start: function start() {
+            elem.addClass('progress');
+          },
+          complete: function complete() {
+            elem.removeClass('progress');
+            elem.addClass('complete');
+          }
+        });
+      }
+    });
+  }
+
   window.addEventListener('scroll', checkSection);
+  window.addEventListener('scroll', runStatsCounter);
 
   function init() {
     animElements = document.querySelectorAll('.anim-in');
@@ -117,6 +156,7 @@ var animSections = [];
     windowHeight = window.innerHeight - 200;
     buildLotties();
     checkSection();
+    runStatsCounter();
     console.log(document.body.clientWidth);
 
     if ($('body.home').length && document.body.clientWidth > 640) {
