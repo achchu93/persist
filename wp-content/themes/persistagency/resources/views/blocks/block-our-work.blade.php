@@ -17,7 +17,7 @@
 
             @if (!empty($item['image']))
               @if (!empty($item['link']))
-                <a class="" href="{{ $item['link']['url'] }}" target="{{ $item['link']['target'] }}">
+                <a class="" href="{{ $item['link'] }}" target="_blank">
               @endif
               {!! wp_get_attachment_image($item['image']['id'], 'full', false, ['class' => 'w-full h-auto']) !!}
               @if (!empty($link))
@@ -29,7 +29,7 @@
               <h4 class="mt-2 uppercase xl:mt-3 px-4">
 
                 @if (!empty($item['link']))
-                  <a class="" href="{{ $item['link']['url'] }}" target="{{ $item['link']['target'] }}">
+                  <a class="" href="{{ $item['link'] }}" target="_blank">
                 @endif
 
                 {{ $item['title'] }}

@@ -18,7 +18,7 @@
 
             <?php if(!empty($item['image'])): ?>
               <?php if(!empty($item['link'])): ?>
-                <a class="" href="<?php echo e($item['link']['url']); ?>" target="<?php echo e($item['link']['target']); ?>">
+                <a class="" href="<?php echo e($item['link']); ?>" target="_blank">
               <?php endif; ?>
               <?php echo wp_get_attachment_image($item['image']['id'], 'full', false, ['class' => 'w-full h-auto']); ?>
 
@@ -31,7 +31,7 @@
               <h4 class="mt-2 uppercase xl:mt-3 px-4">
 
                 <?php if(!empty($item['link'])): ?>
-                  <a class="" href="<?php echo e($item['link']['url']); ?>" target="<?php echo e($item['link']['target']); ?>">
+                  <a class="" href="<?php echo e($item['link']); ?>" target="_blank">
                 <?php endif; ?>
 
                 <?php echo e($item['title']); ?>

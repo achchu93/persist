@@ -15,6 +15,7 @@ add_action('acf/init', function () {
             'title' => get_sub_field('title'),
             'subtitle' => get_sub_field('subtitle'),
             'image' => get_sub_field('image'),
+            'link' => get_sub_field('link')
           ];
         }
 
