@@ -141,3 +141,8 @@
     padding-right: 8rem;
   }
 }
+
+.custom-worked-with {
+  background-image: url('/wp-content/uploads/2021/06/Group-345@2x.jpg');
+  background-size: cover;
+}
