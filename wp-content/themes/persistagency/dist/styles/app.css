@@ -93371,6 +93371,22 @@ video {
   background-color: #F0F0F2;
   background-color: rgba(240, 240, 242, var(--bg-opacity));
 }
+
+.gfp-photo-credit {
+  margin-top: -5rem;
+  position: relative;
+  z-index: 10;
+  padding-bottom: 3.5rem;
+  text-align: right;
+  padding-right: 2rem;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .gfp-photo-credit {
+    padding-right: 8rem;
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document

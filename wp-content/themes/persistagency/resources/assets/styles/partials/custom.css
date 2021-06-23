@@ -125,3 +125,19 @@
 .single.single-case-study .thumbnail-wrapper {
   @apply bg-gray2;
 }
+
+.gfp-photo-credit {
+  margin-top: -5rem;
+  position: relative;
+  z-index: 10;
+  padding-bottom: 3.5rem;
+  text-align: right;
+  padding-right: 2rem;
+  font-size: 14px;
+}
+
+@screen md {
+  .gfp-photo-credit {
+    padding-right: 8rem;
+  }
+}
