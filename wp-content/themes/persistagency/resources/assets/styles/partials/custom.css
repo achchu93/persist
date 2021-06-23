@@ -146,3 +146,9 @@
   background-image: url('/wp-content/uploads/2021/06/Group-345@2x.jpg');
   background-size: cover;
 }
+
+.custom-our-team {
+  background-image: url(/wp-content/uploads/2021/06/Photocopy-Texture-2@2x.jpg);
+  background-size: cover;
+  background-position: 0 -13rem;
+}
