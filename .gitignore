@@ -2,8 +2,9 @@
 ############
 wp-config-local.php
 wp-cli.local.yml
+wp-content/themes/persistagency/storage/*
 wp-content/themes/persist/node_modules/
-wp-content/themes/persist/vendor/
+wp-content/themes/persistagency/vendor/
 wp-content/uploads
 wp-content/blogs.dir/
 wp-content/upgrade/
