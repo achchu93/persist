@@ -93398,6 +93398,50 @@ video {
   background-size: cover;
   background-position: 0 -13rem;
 }
+
+.custom-feminist-section-2 .item>.flex {
+  align-items: center;
+}
+
+.custom-feminist-section-2 .item>.flex>div:first-child>img {
+  position: absolute;
+  top: -24rem;
+  width: 110%;
+  max-width: -webkit-max-content;
+  max-width: max-content;
+}
+
+.custom-bff-ecosystem>div {
+  width: 100%;
+  margin-top: 0;
+}
+
+.custom-bff-ecosystem>div>.container {
+  margin-top: 0;
+}
+
+.custom-bff-ecosystem .container>.flex>.flex>div:first-child {
+  background: url(/wp-content/uploads/2021/06/Group-85@2x.png);
+  background-repeat: no-repeat;
+}
+
+.custom-bff-website .container>.flex {
+  align-items: center;
+}
+
+@media (min-width: 1280px) {
+  .custom-bff-website .container>.flex {
+    align-items: initial;
+  }
+
+  .custom-bff-website .container>.flex>div>img {
+    max-width: -webkit-max-content;
+    max-width: max-content;
+    width: 65rem;
+    margin-left: -5rem;
+    margin-top: -2rem;
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
