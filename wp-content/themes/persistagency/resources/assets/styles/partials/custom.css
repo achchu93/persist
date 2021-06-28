@@ -194,3 +194,20 @@
     margin-top: -2rem;
   }
 }
+
+.custom-jubilee-branding .wp-thumbnail {
+  display: none;
+}
+
+.custom-jubilee-branding {
+  margin-top: -34rem;
+}
+
+.custom-badges .container>.flex,
+.align-sections .container>.flex {
+  @apply items-center;
+}
+
+.custom-constellation-network .wp-thumbnail {
+  display: none;
+}

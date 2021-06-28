@@ -93442,6 +93442,23 @@ video {
     margin-top: -2rem;
   }
 }
+
+.custom-jubilee-branding .wp-thumbnail {
+  display: none;
+}
+
+.custom-jubilee-branding {
+  margin-top: -34rem;
+}
+
+.custom-badges .container>.flex,
+.align-sections .container>.flex {
+  align-items: center;
+}
+
+.custom-constellation-network .wp-thumbnail {
+  display: none;
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document

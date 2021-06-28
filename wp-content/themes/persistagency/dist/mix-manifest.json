@@ -3,8 +3,10 @@
     "/scripts/animations.js.map": "/scripts/animations.js.map?id=a09d9e4ef92ed27e1569",
     "/scripts/app.js": "/scripts/app.js?id=fd26df228310cb8c97e4",
     "/styles/editor.css": "/styles/editor.css?id=8991491c5706dd925571",
+    "/styles/app.css": "/styles/app.css?id=038b472e2acf559e0439",
     "/scripts/app.js.map": "/scripts/app.js.map?id=9a4af5dbac13266e0bed",
     "/styles/editor.css.map": "/styles/editor.css.map?id=98efe9fea7efd4b0cde0",
+    "/styles/app.css.map": "/styles/app.css.map?id=7990efa9fe8b773b7100",
     "/scripts/customizer.js": "/scripts/customizer.js?id=84ada8041cd93f543348",
     "/scripts/customizer.js.map": "/scripts/customizer.js.map?id=7ccbbc0987e397319aa2",
     "/scripts/editor.js": "/scripts/editor.js?id=687abe8fad75d9f70485",
@@ -94,7 +96,5 @@
     "/fonts/klavika-regular.eot": "/fonts/klavika-regular.eot?id=d41d8cd98f00b204e980",
     "/fonts/klavika-regular.otf": "/fonts/klavika-regular.otf?id=3da82ff9de2971212900",
     "/fonts/klavika-regular.woff": "/fonts/klavika-regular.woff?id=a1dcf25adf43125419a2",
-    "/fonts/klavika-regular.woff2": "/fonts/klavika-regular.woff2?id=4798eda13b97cc672302",
-    "/styles/app.css": "/styles/app.css?id=ec392b92bb44143dad82",
-    "/styles/app.css.map": "/styles/app.css.map?id=b9237a99f5befd40d2ba"
+    "/fonts/klavika-regular.woff2": "/fonts/klavika-regular.woff2?id=4798eda13b97cc672302"
 }
